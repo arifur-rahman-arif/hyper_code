@@ -185,11 +185,117 @@ aside ul a {
 }
 .tab-content .skill-boxes{
    transition: transform .4s ease;
+   position: relative;
 }
 .tab-content .skill-boxes:hover {
     box-shadow: var(--box-shadow);
     transform: scale(1.1);
 }
+.skill-boxes .skill_info{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    background: white;
+    padding: 5px 10px;
+    white-space: nowrap;
+    text-transform: uppercase;
+    box-shadow: var(--box-shadow);
+    visibility: hidden;
+    opacity: 0;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+}
+.skill_info h6 {
+    font: normal 400 15px/ 20px var(--roboto);
+}
+.skill-boxes .progress-bar {
+    color: white;
+    font-weight: bolder;
+}
+.skill-boxes:nth-child(1) .progress-bar{
+    background: #f16529;
+}
+.skill-boxes:nth-child(2) .progress-bar{
+    background: #264DE4;
+}
+.skill-boxes:nth-child(3) .progress-bar{
+    background: #563D7C;
+}
+.skill-boxes:nth-child(4) .progress-bar{
+    background: #CF649A;
+}
+.skill-boxes:nth-child(5) .progress-bar{
+    background: #fdd83c;
+    color: black;
+}
+.skill-boxes:nth-child(6) .progress-bar{
+    background: #0868ac;
+}
+.skill-boxes:nth-child(7) .progress-bar{
+    background: #cc2131;
+}
+.skill-boxes:nth-child(8) .progress-bar{
+    background: #999;
+}
+.skill-boxes:nth-child(9) .progress-bar{
+    background: #61dafb;
+}
+.skill-boxes:nth-child(10) .progress-bar{
+    background: #8ac640;
+}
+.skill-boxes:nth-child(11) .progress-bar{
+    background: #D34A47;
+}
+.skill-boxes:nth-child(12) .progress-bar{
+    background: #8ed6fb;
+}
+.skill-boxes:nth-child(13) .progress-bar{
+    background: #6e81b6;
+}
+.skill-boxes:nth-child(14) .progress-bar{
+    background: #7D6A4C;
+}
+.skill-boxes:nth-child(15) .progress-bar{
+    background: #f8981d;
+}
+.skill-boxes:nth-child(16) .progress-bar{
+    background: #00749a;
+}
+.skill-boxes:nth-child(17) .progress-bar{
+    background: #9B5C8F;
+}
+.skill-boxes:nth-child(18) .progress-bar{
+    background: #FB7A24;
+}
+.skill-boxes:nth-child(19) .progress-bar{
+    background: #2489ca;
+}
+.skill-boxes:nth-child(20) .progress-bar{
+    background: #a259ff;
+}
+.skill-boxes:nth-child(21) .progress-bar{
+    background: #DE4C36;
+}
+.skill-boxes:nth-child(22) .progress-bar{
+    background: #000;
+}
+.skill-boxes:nth-child(23) .progress-bar{
+    background: #8f0000;
+}
+.tab-content .skill-boxes:hover > .skill_info {
+    opacity: 1;
+    visibility: visible;
+    bottom: -30%;
+}
+
 /* End of skill section area */
 
 /* End About Area */ 
