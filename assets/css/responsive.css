@@ -2,7 +2,8 @@
 
 
 /* if the viewport is equal to 340px or less than that */ 
-@media only screen and (max-width: 340px){
+@media only screen and (max-width: 450px){
+
     .header_area .main-menu .navbar,
     .header_area .main-menu .navbar .navbar-brand,
     .site-main .subscribe-us-area .subscribe .subscribe-title,
@@ -25,7 +26,9 @@
     .site-main > .services-area .services{
         width: 13rem;
     }
-
+    .site-buttons a {
+        margin-bottom: 5px;
+    }
 }
 
 
@@ -33,6 +36,9 @@
 @media only screen and (max-width: 792px){
     .tab-content .skill-boxes{
         margin-top: 2.5rem !important;
+    }
+    #myCanvasContainer > #myCanvas {
+        width: 100%;
     }
     .site-main .about-area .about-title h2 > span{
         font-size: 31px;
