@@ -456,6 +456,30 @@ aside ul a {
     height: 100%;
     margin: auto;
 }
+.tabs-area #tabs-3{
+    min-height: 300px;
+}
+.tab-pane  .ball_container{
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin: 20px 18px;
+    align-items: center;
+    box-shadow: var(--box-shadow);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.tab-pane  .ball_container > img {
+    width: 50%;
+    height: 50%;
+    object-fit: contain;
+}
+
 /* End of skill section area */
 
 
