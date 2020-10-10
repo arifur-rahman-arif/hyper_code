@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="color-scheme" content="dark light">
     <title>Hyper Code</title>
 
     <link rel="icon" type="image/png" href="./assets/img/logo.png" />
@@ -70,7 +71,12 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#contact">contact</a>
                         </li>
-
+                        <li class="nav-item d-flex justify-content-center align-items-center px-2 mx-1">
+                            <label for="checkbox" class="switch">
+                                <input type="checkbox" id="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                        </li>
                     </ul>
                 </div>
             </nav>
@@ -158,7 +164,7 @@
                         </h2>
                         <div class="paragraph py-4 w-75">
                             <p class="para">
-                                Hello, I'm a professional web developer/desig.
+                                Hello, I'm a professional web developer/designer.
                             </p>
                             <p class="para">
                                 I have variety of skills that I can implement it on my work with accuracy. Therefore I
@@ -180,15 +186,16 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="row">
-                            <div class="col-6 d-flex align-items-center justify-content-center">
+                            <div class="col-md-6 d-flex align-items-center justify-content-center">
                                 <h2 class="text-uppercase text-center skill-header">
                                     <span>My</span>
                                     <span>Top</span>
                                     <span>Skills</span>
+                                    <span class="arrow_icon"><i class="fas fa-arrow-circle-down"></i></a></span>
                                 </h2>
                             </div>
-                            <div class="col-6">
-                                <img src="./assets/img/skill.svg" alt="skill" width="">
+                            <div class="col-md-6 d-flex justify-content-center align-items-center">
+                                <img src="./assets/img/skill.jpg" alt="skill" class="img-fluid">
                             </div>
                         </div>
                     </div>
@@ -218,9 +225,10 @@
                                     <div class="tab-content mt-4 mb-4">
                                         <div class="tab-pane fade show active" id="tabs-1" role="tabpanel">
                                             <div class="row">
-                                                <div class="col-md-4 text-center mt-4 mb-4 pt-3 pb-3 skill-boxes">
-                                                    <img src="./assets/logo/html-5.svg" alt="html" width="120"
-                                                        height="120">
+                                                <div
+                                                    class="col-lg-3 col-md-4 text-center mt-4 mb-4 pt-3 pb-3 skill-boxes">
+                                                    <img src="./assets/logo/html-5.svg" alt="html" width="90"
+                                                        height="80">
                                                     <div class="skill_info">
                                                         <div class="percentage">
                                                             <h6>HTML :</h6>
@@ -233,9 +241,9 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-4 text-center mt-4 mb-4 pt-3 pb-3 skill-boxes">
-                                                    <img src="./assets/logo/css-3.svg" alt="CSS" width="120"
-                                                        height="120">
+                                                <div
+                                                    class="col-lg-3 col-md-4 text-center mt-4 mb-4 pt-3 pb-3 skill-boxes">
+                                                    <img src="./assets/logo/css-3.svg" alt="CSS" width="90" height="80">
                                                     <div class="skill_info">
                                                         <div class="percentage">
                                                             <h6>CSS :</h6>
@@ -248,9 +256,10 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-4 text-center mt-4 mb-4 pt-3 pb-3 skill-boxes">
-                                                    <img src="./assets/logo/bootstrap-4.svg" alt="Bootstrap" width="120"
-                                                        height="120">
+                                                <div
+                                                    class="col-lg-3 col-md-4 text-center mt-4 mb-4 pt-3 pb-3 skill-boxes">
+                                                    <img src="./assets/logo/bootstrap-4.svg" alt="Bootstrap" width="90"
+                                                        height="80">
                                                     <div class="skill_info">
                                                         <div class="percentage">
                                                             <h6>Bootstrap :</h6>
@@ -263,9 +272,10 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-4 text-center mt-4 mb-4 pt-3 pb-3 skill-boxes">
-                                                    <img src="./assets/logo/sass-1.svg" alt="SASS" width="120"
-                                                        height="120">
+                                                <div
+                                                    class="col-lg-3 col-md-4 text-center mt-4 mb-4 pt-3 pb-3 skill-boxes">
+                                                    <img src="./assets/logo/sass-1.svg" alt="SASS" width="90"
+                                                        height="80">
                                                     <div class="skill_info">
                                                         <div class="percentage">
                                                             <h6>SASS :</h6>
@@ -278,9 +288,10 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-4 text-center mt-4 mb-4 pt-3 pb-3 skill-boxes">
-                                                    <img src="./assets/logo/javascript.svg" alt="JavaScript" width="120"
-                                                        height="120">
+                                                <div
+                                                    class="col-lg-3 col-md-4 text-center mt-4 mb-4 pt-3 pb-3 skill-boxes">
+                                                    <img src="./assets/logo/javascript.svg" alt="JavaScript" width="90"
+                                                        height="80">
                                                     <div class="skill_info">
                                                         <div class="percentage">
                                                             <h6>JavaScript :</h6>
@@ -293,9 +304,10 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-4 text-center mt-4 mb-4 pt-3 pb-3 skill-boxes">
-                                                    <img src="./assets/logo/jquery-1.svg" alt="jQuery" width="120"
-                                                        height="120">
+                                                <div
+                                                    class="col-lg-3 col-md-4 text-center mt-4 mb-4 pt-3 pb-3 skill-boxes">
+                                                    <img src="./assets/logo/jquery-1.svg" alt="jQuery" width="90"
+                                                        height="80">
                                                     <div class="skill_info">
                                                         <div class="percentage">
                                                             <h6>jQuery :</h6>
@@ -308,9 +320,10 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-4 text-center mt-4 mb-4 pt-3 pb-3 skill-boxes">
-                                                    <img src="./assets/logo/ajax-5.svg" alt="AJAX" width="120"
-                                                        height="120">
+                                                <div
+                                                    class="col-lg-3 col-md-4 text-center mt-4 mb-4 pt-3 pb-3 skill-boxes">
+                                                    <img src="./assets/logo/ajax-5.svg" alt="AJAX" width="90"
+                                                        height="80">
                                                     <div class="skill_info">
                                                         <div class="percentage">
                                                             <h6>AJAX :</h6>
@@ -323,9 +336,10 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-4 text-center mt-4 mb-4 pt-3 pb-3 skill-boxes">
-                                                    <img src="./assets/logo/json-5.svg" alt="JSON" width="120"
-                                                        height="120">
+                                                <div
+                                                    class="col-lg-3 col-md-4 text-center mt-4 mb-4 pt-3 pb-3 skill-boxes">
+                                                    <img src="./assets/logo/json-5.svg" alt="JSON" width="90"
+                                                        height="80">
                                                     <div class="skill_info">
                                                         <div class="percentage">
                                                             <h6>JSON :</h6>
@@ -338,9 +352,10 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-4 text-center mt-4 mb-4 pt-3 pb-3 skill-boxes">
-                                                    <img src="./assets/logo/react-2.svg" alt="React" width="120"
-                                                        height="120">
+                                                <div
+                                                    class="col-lg-3 col-md-4 text-center mt-4 mb-4 pt-3 pb-3 skill-boxes">
+                                                    <img src="./assets/logo/react-2.svg" alt="React" width="90"
+                                                        height="80">
                                                     <div class="skill_info">
                                                         <div class="percentage">
                                                             <h6>React :</h6>
@@ -353,9 +368,10 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-4 text-center mt-4 mb-4 pt-3 pb-3 skill-boxes">
-                                                    <img src="./assets/logo/gsap-greensock.svg" alt="GSAP" width="120"
-                                                        height="120">
+                                                <div
+                                                    class="col-lg-3 col-md-4 text-center mt-4 mb-4 pt-3 pb-3 skill-boxes">
+                                                    <img src="./assets/logo/gsap-greensock.svg" alt="GSAP" width="90"
+                                                        height="80">
                                                     <div class="skill_info">
                                                         <div class="percentage">
                                                             <h6>GSAP :</h6>
@@ -368,9 +384,10 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-4 text-center mt-4 mb-4 pt-3 pb-3 skill-boxes">
-                                                    <img src="./assets/logo/gulp.svg" alt="Gulp" width="120"
-                                                        height="120">
+                                                <div
+                                                    class="col-lg-3 col-md-4 text-center mt-4 mb-4 pt-3 pb-3 skill-boxes">
+                                                    <img style="position: relative; left: 10%;"
+                                                        src="./assets/logo/gulp.svg" alt="Gulp" width="90" height="80">
                                                     <div class="skill_info">
                                                         <div class="percentage">
                                                             <h6>Gulp :</h6>
@@ -383,9 +400,10 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-4 text-center mt-4 mb-4 pt-3 pb-3 skill-boxes">
-                                                    <img src="./assets/logo/webpack-icon.svg" alt="WebPack" width="120"
-                                                        height="120">
+                                                <div
+                                                    class="col-lg-3 col-md-4 text-center mt-4 mb-4 pt-3 pb-3 skill-boxes">
+                                                    <img src="./assets/logo/webpack-icon.svg" alt="WebPack" width="90"
+                                                        height="80">
                                                     <div class="skill_info">
                                                         <div class="percentage">
                                                             <h6>WebPack :</h6>
@@ -398,9 +416,9 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-4 text-center mt-4 mb-4 pt-3 pb-3 skill-boxes">
-                                                    <img src="./assets/logo/php-1.svg" alt="PHP" width="120"
-                                                        height="120">
+                                                <div
+                                                    class="col-lg-3 col-md-4 text-center mt-4 mb-4 pt-3 pb-3 skill-boxes">
+                                                    <img src="./assets/logo/php-1.svg" alt="PHP" width="90" height="80">
                                                     <div class="skill_info">
                                                         <div class="percentage">
                                                             <h6>PHP :</h6>
@@ -413,9 +431,10 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-4 text-center mt-4 mb-4 pt-3 pb-3 skill-boxes">
-                                                    <img src="./assets/logo/composer.svg" alt="Composer" width="120"
-                                                        height="120">
+                                                <div
+                                                    class="col-lg-3 col-md-4 text-center mt-4 mb-4 pt-3 pb-3 skill-boxes">
+                                                    <img src="./assets/logo/composer.svg" alt="Composer" width="90"
+                                                        height="80">
                                                     <div class="skill_info">
                                                         <div class="percentage">
                                                             <h6>Composer :</h6>
@@ -428,9 +447,10 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-4 text-center mt-4 mb-4 pt-3 pb-3 skill-boxes">
-                                                    <img src="./assets/logo/mysql.svg" alt="MySQL" width="120"
-                                                        height="120">
+                                                <div
+                                                    class="col-lg-3 col-md-4 text-center mt-4 mb-4 pt-3 pb-3 skill-boxes">
+                                                    <img src="./assets/logo/mysql.svg" alt="MySQL" width="90"
+                                                        height="80">
                                                     <div class="skill_info">
                                                         <div class="percentage">
                                                             <h6>MySQL :</h6>
@@ -443,9 +463,10 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-4 text-center mt-4 mb-4 pt-3 pb-3 skill-boxes">
+                                                <div
+                                                    class="col-lg-3 col-md-4 text-center mt-4 mb-4 pt-3 pb-3 skill-boxes">
                                                     <img src="./assets/logo/wordpress-blue.svg" alt="WordPress"
-                                                        width="120" height="120">
+                                                        width="80" height="80">
                                                     <div class="skill_info">
                                                         <div class="percentage">
                                                             <h6>WordPress :</h6>
@@ -458,9 +479,10 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-4 text-center mt-4 mb-4 pt-3 pb-3 skill-boxes">
+                                                <div
+                                                    class="col-lg-3 col-md-4 text-center mt-4 mb-4 pt-3 pb-3 skill-boxes">
                                                     <img src="./assets/logo/woocommerce.svg" alt="WooCommerce"
-                                                        width="120" height="120">
+                                                        width="80" height="80">
                                                     <div class="skill_info">
                                                         <div class="percentage">
                                                             <h6>WooCommerce :</h6>
@@ -473,9 +495,10 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-4 text-center mt-4 mb-4 pt-3 pb-3 skill-boxes">
-                                                    <img src="./assets/logo/xampp.svg" alt="Xampp" width="120"
-                                                        height="120">
+                                                <div
+                                                    class="col-lg-3 col-md-4 text-center mt-4 mb-4 pt-3 pb-3 skill-boxes">
+                                                    <img src="./assets/logo/xampp.svg" alt="Xampp" width="90"
+                                                        height="80">
                                                     <div class="skill_info">
                                                         <div class="percentage">
                                                             <h6>Xampp :</h6>
@@ -488,9 +511,10 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-4 text-center mt-4 mb-4 pt-3 pb-3 skill-boxes">
-                                                    <img src="./assets/logo/laragon.svg" alt="Xampp" width="120"
-                                                        height="120">
+                                                <div
+                                                    class="col-lg-3 col-md-4 text-center mt-4 mb-4 pt-3 pb-3 skill-boxes">
+                                                    <img src="./assets/logo/laragon.svg" alt="Xampp" width="90"
+                                                        height="80">
                                                     <div class="skill_info">
                                                         <div class="percentage">
                                                             <h6>Laragon :</h6>
@@ -503,9 +527,10 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-4 text-center mt-4 mb-4 pt-3 pb-3 skill-boxes">
-                                                    <img src="./assets/logo/vs-code.svg" alt="VS Code" width="120"
-                                                        height="120">
+                                                <div
+                                                    class="col-lg-3 col-md-4 text-center mt-4 mb-4 pt-3 pb-3 skill-boxes">
+                                                    <img src="./assets/logo/vs-code.svg" alt="VS Code" width="90"
+                                                        height="80">
                                                     <div class="skill_info">
                                                         <div class="percentage">
                                                             <h6>VS Code :</h6>
@@ -518,9 +543,10 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-4 text-center mt-4 mb-4 pt-3 pb-3 skill-boxes">
-                                                    <img src="./assets/logo/figma-1.svg" alt="Figma" width="120"
-                                                        height="120">
+                                                <div
+                                                    class="col-lg-3 col-md-4 text-center mt-4 mb-4 pt-3 pb-3 skill-boxes">
+                                                    <img src="./assets/logo/figma-1.svg" alt="Figma" width="90"
+                                                        height="80">
                                                     <div class="skill_info">
                                                         <div class="percentage">
                                                             <h6>Figma :</h6>
@@ -533,8 +559,9 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-4 text-center mt-4 mb-4 pt-3 pb-3 skill-boxes">
-                                                    <img src="./assets/logo/git.svg" alt="Git" width="120" height="120">
+                                                <div
+                                                    class="col-lg-3 col-md-4 text-center mt-4 mb-4 pt-3 pb-3 skill-boxes">
+                                                    <img src="./assets/logo/git.svg" alt="Git" width="80" height="80">
                                                     <div class="skill_info">
                                                         <div class="percentage">
                                                             <h6>Git :</h6>
@@ -547,9 +574,9 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-4 text-center mt-4 mb-4 pt-3 pb-3 skill-boxes">
-                                                    <img src="./assets/logo/github-1.svg" alt="Github" width="120"
-                                                        height="120">
+                                                <div class="col-md-3 text-center mt-4 mb-4 pt-3 pb-3 skill-boxes">
+                                                    <img src="./assets/logo/github-1.svg" alt="Github" width="90"
+                                                        height="80">
                                                     <div class="skill_info">
                                                         <div class="percentage">
                                                             <h6>GitHub :</h6>
@@ -562,9 +589,9 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-4 text-center mt-4 mb-4 pt-3 pb-3 skill-boxes">
+                                                <div class="col-md-3 text-center mt-4 mb-4 pt-3 pb-3 skill-boxes">
                                                     <img src="./assets/logo/filezilla-logo.svg" alt="FileZilla"
-                                                        width="120" height="120">
+                                                        width="80" height="80">
                                                     <div class="skill_info">
                                                         <div class="percentage">
                                                             <h6>FileZilla :</h6>
@@ -830,9 +857,9 @@
         <!--  ======================== Brand Area ==============================  -->
 
         <section class="brand-area">
-            <div class="container-fluid">
+            <div class="container">
                 <div class="row">
-                    <div class="col-xl-6 col-lg-12 col-md-12">
+                    <div class="col-md-6">
                         <div class="experience-area">
                             <div class="d-flex flex-row years-area">
                                 <h2 class="p-3 years">1+</h2>
@@ -850,7 +877,11 @@
                                     <span class="font-roboto py-2">(+88) 018-7412-7669</span>
                                 </div>
                             </div>
-                            <div class="bg-panel"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 pl-lg-5">
+                        <div class="contact_img_box">
+                            <img src="./assets/img/call.jpg" alt="call" class="img-fluid">
                         </div>
                     </div>
                 </div>
@@ -969,16 +1000,17 @@
                     <h1 class="text-uppercase title-h1">Quality Work</h1>
                 </div>
 
-                <div class="button-group">
-                    <button type="button" class="active" id="btn1" data-filter="*">All</button>
-                    <button type="button" data-filter=".popular">Popular</button>
-                    <button type="button" data-filter=".latest">Latest</button>
-                    <button type="button" data-filter=".following">Following</button>
-                    <button type="button" data-filter=".upcoming">Upcoming</button>
+                <div
+                    class="d-flex align-items-center flex-wrap mb-3 flex-column justify-content-center flex-md-row button-group">
+                    <button type="button" class="active px-md-3" id="btn1" data-filter="*">All</button>
+                    <button type="button" class="px-md-3" data-filter=".popular">E-commerce</button>
+                    <button type="button" class="px-md-3" data-filter=".latest">Test Project</button>
+                    <button type="button" class="px-md-3" data-filter=".following">React</button>
+                    <button type="button" class="px-md-3" data-filter=".upcoming">Wordpress</button>
                 </div>
 
                 <div class="row grid">
-                    <div class="col-lg-4 col-md-6 col-sm-12 element-item latest">
+                    <div class="col-lg-4 col-md-6 col-sm-12 element-item mix latest">
                         <div class="our-project">
                             <div class="img">
                                 <a class="test-popup-link" href="./assets/img/portfolio/p1.jpg">
@@ -991,7 +1023,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 element-item popular">
+                    <div class="col-lg-4 col-md-6 col-sm-12 element-item mix popular">
                         <div class="our-project">
                             <div class="img">
                                 <a class="test-popup-link" href="./assets/img/portfolio/p2.jpg">
@@ -1004,7 +1036,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 element-item popular">
+                    <div class="col-lg-4 col-md-6 col-sm-12 element-item mix popular">
                         <div class="our-project">
                             <div class="img">
                                 <a class="test-popup-link" href="./assets/img/portfolio/p3.jpg">
@@ -1017,7 +1049,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 element-item upcoming">
+                    <div class="col-lg-4 col-md-6 col-sm-12 element-item mix upcoming">
                         <div class="our-project">
                             <div class="img">
                                 <a class="test-popup-link" href="./assets/img/portfolio/p4.jpg">
@@ -1030,7 +1062,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 element-item upcoming">
+                    <div class="col-lg-4 col-md-6 col-sm-12 element-item mix upcoming">
                         <div class="our-project">
                             <div class="img">
                                 <a class="test-popup-link" href="./assets/img/portfolio/p5.jpg">
@@ -1043,7 +1075,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 element-item following">
+                    <div class="col-lg-4 col-md-6 col-sm-12 element-item mix following">
                         <div class="our-project">
                             <div class="img">
                                 <a class="test-popup-link" href="./assets/img/portfolio/p6.jpg">
@@ -1056,7 +1088,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 element-item following">
+                    <div class="col-lg-4 col-md-6 col-sm-12 element-item mix following">
                         <div class="our-project">
                             <div class="img">
                                 <a class="test-popup-link" href="./assets/img/portfolio/p7.jpg">
@@ -1069,7 +1101,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 element-item following">
+                    <div class="col-lg-4 col-md-6 col-sm-12 element-item mix following">
                         <div class="our-project">
                             <div class="img">
                                 <a class="test-popup-link" href="./assets/img/portfolio/p8.jpg">
@@ -1082,7 +1114,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 element-item upcoming">
+                    <div class="col-lg-4 col-md-6 col-sm-12 element-item mix upcoming">
                         <div class="our-project">
                             <div class="img">
                                 <a class="test-popup-link" href="./assets/img/portfolio/p9.jpg">
@@ -1223,7 +1255,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
     <!--  isotope js library  -->
-    <script src="./assets/vendor/isotope/isotope.min.js"></script>
+    <script src="./assets/vendor/isotope/mixitup.min.js"></script>
 
     <!--  Magnific popup script file  -->
     <script src="./assets/vendor/Magnific-Popup/dist/jquery.magnific-popup.min.js"></script>
@@ -1239,9 +1271,6 @@
     <script src="./assets/js/main.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/CSSRulePlugin.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollToPlugin.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/EasePack.min.js"></script>
 
     <!-- Tag canvas file -->

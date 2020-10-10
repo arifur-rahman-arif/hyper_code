@@ -8,14 +8,11 @@ $(document).ready(function () {
 
         $('.project-area .button-group button').removeClass('active');
         e.target.classList.add('active');
-
-        let selector = $(e.target).attr('data-filter');
-        $('.project-area .grid').isotope({
-            filter: selector
-        });
-
-        return false;
+        var containerEl = document.querySelector('.project-area .grid');
+        mixitup(containerEl)
     })
+
+
 
     $('.project-area .button-group #btn1').trigger('click');
 
@@ -59,4 +56,27 @@ $(document).ready(function () {
     }
 
     navbarFixed();
+
+    /* Dark Mode functionality */
+    $('.nav-item  #checkbox').click(function (e) {
+        if ($('.nav-item > .switch > #checkbox').prop('checked') == true) {
+            $(document.body).addClass('dark-mode');
+            $('.site-main .site-banner').css('background-image', 'none');
+            $('.about-title p').css('color', 'whitesmoke');
+            $('.services-title p').css('color', 'whitesmoke');
+            $('.services-title a').css('color', 'black');
+            $('.tab-content .skill-boxes > .skill_info').css('background', 'unset')
+            $('.services').css('background', 'inherit')
+            $('.services > .card-body > p').addClass('dark-mode-service_p');
+            $('.owl-item p').css('color', 'whitesmoke');
+
+            $('.footer-area').css('background-image', 'none');
+            $('.footer-area').addClass('dark_mode_footer');
+            $('.footer-area .social a > i').css('color', 'whitesmoke');
+            $('.footer-area .social a').addClass('dark_mode_hover');
+
+        } else {
+            $(document.body).removeClass('dark-mode');
+        }
+    })
 });
