@@ -60,23 +60,56 @@ $(document).ready(function () {
     /* Dark Mode functionality */
     $('.nav-item  #checkbox').click(function (e) {
         if ($('.nav-item > .switch > #checkbox').prop('checked') == true) {
+
             $(document.body).addClass('dark-mode');
-            $('.site-main .site-banner').css('background-image', 'none');
+            $('.site-main .site-banner').removeClass('banner-bg');
             $('.about-title p').css('color', 'whitesmoke');
+
             $('.services-title p').css('color', 'whitesmoke');
             $('.services-title a').css('color', 'black');
+
             $('.tab-content .skill-boxes > .skill_info').css('background', 'unset')
             $('.services').css('background', 'inherit')
             $('.services > .card-body > p').addClass('dark-mode-service_p');
             $('.owl-item p').css('color', 'whitesmoke');
 
-            $('.footer-area').css('background-image', 'none');
+
+            $('.footer-area').removeClass('footer-bg');
             $('.footer-area').addClass('dark_mode_footer');
             $('.footer-area .social a > i').css('color', 'whitesmoke');
             $('.footer-area .social a').addClass('dark_mode_hover');
 
+            $('form').addClass('dark-form');
+
         } else {
+
             $(document.body).removeClass('dark-mode');
+            $('.site-main .site-banner').addClass('banner-bg');
+            $('.about-title p').css('color', '#777777');
+
+            $('.services-title p').css('color', '#777777');
+            $('.services-title a').css('color', '#007bff');
+            $('.services > .card-body > p').removeClass('dark-mode-service_p');
+            $('.owl-item p').css('color', '#777777');
+
+            $('.footer-area').addClass('footer-bg');
+            $('.footer-area').removeClass('dark_mode_footer');
+            $('.footer-area .social a').removeClass('dark_mode_hover');
+
+            $('form').removeClass('dark-form');
+
         }
+    })
+    /* dark mode end */
+
+    /* Side navigation active design */
+    $('aside > ul > li').click(function (e) {
+        $('aside > ul > li').removeClass('active_side_nav');
+        $(e.currentTarget).addClass('active_side_nav');
+    })
+    /* Side navigation active design end */
+    $('footer form').on('submit', function (e) {
+        e.preventDefault();
+        let formData = $(this).serializeArray();
     })
 });

@@ -13,8 +13,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
     <!--  font awesome icons  -->
-    <link rel="stylesheet" href="./assets/css/all.min.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
 
     <!--  Magnific Popup css file  -->
     <link rel="stylesheet" href="./assets/vendor/Magnific-Popup/dist/magnific-popup.css">
@@ -121,7 +120,7 @@
 
 
         <!--  ======================= Start Banner Area =======================  -->
-        <section class="site-banner">
+        <section class="site-banner banner-bg">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 col-md-12 site-title">
@@ -860,21 +859,30 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
-                        <div class="experience-area">
-                            <div class="d-flex flex-row years-area">
-                                <h2 class="p-3 years">1+</h2>
+                        <div class="experience-area px-3">
+                            <div class="d-flex flex-lg-row flex-md-column years-area">
+                                <h2 class="p-3 years">1.5</h2>
                                 <h2>
                                     <span>Years</span>
                                     <span>Experience In</span>
                                     <span>Working</span>
                                 </h2>
                             </div>
-                            <div class="d-flex flex-row flex-wrap call-area">
-                                <span><i class="fas fa-phone-alt fa-3x px-3"></i></span>
-                                <div class="call-now">
-                                    <a href="tel:+8801891852840" class="text-uppercase h4 font-roboto">Call Now</a>
-                                    <span class="font-roboto py-2">(+88) 018-9185-2840</span>
-                                    <span class="font-roboto py-2">(+88) 018-7412-7669</span>
+                            <div class="row">
+                                <div class="col-12 d-flex flex-row flex-wrap call-area pb-2 ml-2">
+                                    <span class="mb-2 mr-3"><i class="fas fa-phone-alt fa-3x"></i></span>
+                                    <div class="call-now">
+                                        <a href="tel:+8801891852840" class="text-uppercase h4 font-roboto">Call Now</a>
+                                        <span class="font-roboto py-2">(+88) 018-9185-2840</span>
+                                    </div>
+                                </div>
+                                <div class="col-12 d-flex flex-row flex-wrap call-area pb-2 ml-2">
+                                    <span class="mb-2 mr-3"><i class="fas fa-envelope fa-3x"></i></span>
+                                    <div class="call-now">
+                                        <a href="https://mail.google.com/mail/u/0/#inbox?compose=new" target="blank"
+                                            class="text-uppercase h4 font-roboto">Send Mail</a>
+                                        <span class="font-roboto py-2">dev.ar.arif@gmail.com</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -900,8 +908,7 @@
                         <p class="para">
                             These are the services that I offer to my clients locally or internationally.
                             If you are interested in of these <a href="tel:+8801891852840">Contact me via phone</a>
-                            or <a target="blank"
-                                href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=dev.ar.arif@email.com&su=Want to hire you">Email</a>
+                            or <a href="#contact">Email</a>
                             so that I can reach
                             you.
                         </p>
@@ -1010,7 +1017,7 @@
                 </div>
 
                 <div class="row grid">
-                    <div class="col-lg-4 col-md-6 col-sm-12 element-item mix latest">
+                    <div class="col-lg-4 col-md-6 col-sm-12 text-center element-item mix latest">
                         <div class="our-project">
                             <div class="img">
                                 <a class="test-popup-link" href="./assets/img/portfolio/p1.jpg">
@@ -1023,7 +1030,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 element-item mix popular">
+                    <div class="col-lg-4 col-md-6 col-sm-12 text-center element-item mix popular">
                         <div class="our-project">
                             <div class="img">
                                 <a class="test-popup-link" href="./assets/img/portfolio/p2.jpg">
@@ -1036,7 +1043,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 element-item mix popular">
+                    <div class="col-lg-4 col-md-6 col-sm-12 text-center element-item mix popular">
                         <div class="our-project">
                             <div class="img">
                                 <a class="test-popup-link" href="./assets/img/portfolio/p3.jpg">
@@ -1049,7 +1056,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 element-item mix upcoming">
+                    <div class="col-lg-4 col-md-6 col-sm-12 text-center element-item mix upcoming">
                         <div class="our-project">
                             <div class="img">
                                 <a class="test-popup-link" href="./assets/img/portfolio/p4.jpg">
@@ -1062,7 +1069,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 element-item mix upcoming">
+                    <div class="col-lg-4 col-md-6 col-sm-12 text-center element-item mix upcoming">
                         <div class="our-project">
                             <div class="img">
                                 <a class="test-popup-link" href="./assets/img/portfolio/p5.jpg">
@@ -1075,7 +1082,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 element-item mix following">
+                    <div class="col-lg-4 col-md-6 col-sm-12 text-center element-item mix following">
                         <div class="our-project">
                             <div class="img">
                                 <a class="test-popup-link" href="./assets/img/portfolio/p6.jpg">
@@ -1088,7 +1095,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 element-item mix following">
+                    <div class="col-lg-4 col-md-6 col-sm-12 text-center element-item mix following">
                         <div class="our-project">
                             <div class="img">
                                 <a class="test-popup-link" href="./assets/img/portfolio/p7.jpg">
@@ -1101,7 +1108,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 element-item mix following">
+                    <div class="col-lg-4 col-md-6 col-sm-12 text-center element-item mix following">
                         <div class="our-project">
                             <div class="img">
                                 <a class="test-popup-link" href="./assets/img/portfolio/p8.jpg">
@@ -1114,7 +1121,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 element-item mix upcoming">
+                    <div class="col-lg-4 col-md-6 col-sm-12 text-center element-item mix upcoming">
                         <div class="our-project">
                             <div class="img">
                                 <a class="test-popup-link" href="./assets/img/portfolio/p9.jpg">
@@ -1220,27 +1227,60 @@
     </main>
     <!--  ======================= End Main Area ================================ -->
 
-    <footer class="footer-area" id="contact">
+    <footer class="footer-area footer-bg" id="contact">
         <div class="container">
-            <div class="">
-                <div class="site-logo text-center py-4">
-                    <a href="#"><img src="./assets/img/logo.png" alt="logo"></a>
+            <div class="row">
+                <div class="col-md-6 col-12 pl-5">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="input_name">Name :</label>
+                                <input type="text" class="form-control" name="name" id="input_name"
+                                    placeholder="Your Name">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="input_email">Email :</label>
+                                <input type="email" required class="form-control" name="email" id="input_email"
+                                    placeholder="Your Email">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="input_subject">Subject :</label>
+                            <input type="text" class="form-control" name="subject" id="input_subject"
+                                value="Want to hire you">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Your Message :</label>
+                            <textarea class="form-control" name="msg" id="exampleFormControlTextarea1"
+                                placeholder="Type your messege..." rows="3"></textarea>
+                        </div>
+                        <div class="site-buttons">
+                            <div class="d-flex flex-row flex-wrap">
+                                <button target="blank" type="submit"
+                                    class="btn button primary-button mr-4 text-uppercase">
+                                    Send Messege
+                                </button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
-                <div class="social text-center">
-                    <h5 class="text-uppercase">Contact me on</h5>
-                    <a title="Contact me on facebook" target="blank"
-                        href="https://www.facebook.com/profile.php?id=100023045749987"><i
-                            class="fab fa-facebook"></i></a>
-                    <a title="Contact me on linkedin" target="blank"
-                        href="https://www.linkedin.com/in/arifur-rahman-arif-51222a1b8/"><i
-                            class="fab fa-linkedin"></i></a>
-                    <a title="Watch my github repository" target="blank" href="https://github.com/Arif32-dev"><i
-                            class="fab fa-github"></i></a>
-                    <a title="Contact me on skype" target="blank" href="https://join.skype.com/invite/QItgzM2gvboC"><i
-                            class="fab fa-skype"></i></a>
-                    <a title="Contact me on gmail" target="blank"
-                        href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=dev.ar.arif@email.com&su=Want to hire you">
-                        <i class="fas fa-envelope"></i></a>
+                <div class="col-md-6 col-12">
+                    <div class="site-logo text-center">
+                        <a href="#"><img src="./assets/img/logo.png" alt="logo"></a>
+                    </div>
+                    <div class="social text-center">
+                        <h5 class="text-uppercase">Contact me on</h5>
+                        <a title="Contact me on facebook" target="blank"
+                            href="https://www.facebook.com/profile.php?id=100023045749987"><i
+                                class="fab fa-facebook"></i></a>
+                        <a title="Contact me on linkedin" target="blank"
+                            href="https://www.linkedin.com/in/arifur-rahman-arif-51222a1b8/"><i
+                                class="fab fa-linkedin"></i></a>
+                        <a title="Watch my github repository" target="blank" href="https://github.com/Arif32-dev"><i
+                                class="fab fa-github"></i></a>
+                        <a title="Contact me on skype" target="blank"
+                            href="https://join.skype.com/invite/QItgzM2gvboC"><i class="fab fa-skype"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1270,6 +1310,7 @@
     <!--  custom js file  -->
     <script src="./assets/js/main.js"></script>
 
+    <!-- GSAP -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/EasePack.min.js"></script>
 
@@ -1278,6 +1319,7 @@
 
     <!-- aimation js file -->
     <script src="./assets/js/float.js"></script>
+
 
     <!-- writing inline javascript -->
     <script>

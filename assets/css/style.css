@@ -1,3 +1,7 @@
+*{
+    scroll-behavior: smooth;
+}
+
 /* Dark mode */
 
 .dark-mode {
@@ -161,8 +165,17 @@ aside ul li{
     -ms-border-radius: 4px;
     -o-border-radius: 4px;
 }
+aside ul > .active_side_nav{
+    background: whitesmoke;
+}
+aside ul > .active_side_nav > a{
+    color: var(--primary-color);
+}
 aside ul li:hover{
     background: whitesmoke;
+}
+aside ul li > a:hover{
+    color: var(--primary-color);
 }
 aside ul a {
     color: whitesmoke;
@@ -185,7 +198,7 @@ aside ul a {
 
 /* Banner Area */ 
 
-.site-main .site-banner {
+.site-main .banner-bg{
     background: url(../img/banner/home-banner.png) no-repeat 0% 50%;
 }
 
@@ -637,9 +650,6 @@ aside ul a {
     font: normal 600 22px/30px var(--roboto);
 }
 
-.site-main .brand-area .experience-area .call-area{
-    padding-left: 10rem;
-}
 
 /* End Brand Area */ 
 
@@ -751,9 +761,10 @@ aside ul a {
 
 
 /* Footer Area */ 
-
-footer.footer-area{
+footer{
     padding: 5rem 0;
+}
+footer.footer-bg{
     background: url(../img/footer-bg.png) no-repeat;
 }
 footer.dark_mode_footer{
@@ -776,8 +787,14 @@ footer.footer-area .social a:hover > i{
 footer.footer-area .social .dark_mode_hover:hover > i{
     color: var(--primary-color) !important;
 }
-*{
-    scroll-behavior: smooth;
+.footer-area form label, input {
+    font: normal 500 15px/ 20px var(--roboto);
+}
+.footer-area .dark-form label{
+    color: whitesmoke;
+}
+::placeholder{
+    font: normal 500 15px/ 20px var(--roboto);
 }
 
 /* End Footer */ 
