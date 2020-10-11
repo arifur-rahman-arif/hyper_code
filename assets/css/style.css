@@ -452,7 +452,7 @@ aside ul a {
     background: #7D6A4C;
 }
 .skill-boxes:nth-child(14):hover .progress-bar{
-    --skill-width: 90%;
+    --skill-width: 85%;
     animation: progress_animation 1s ease-in-out;
     -webkit-animation: progress_animation 1s ease-in-out;
 }

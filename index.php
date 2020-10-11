@@ -1,3 +1,6 @@
+ <?php 
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,12 +19,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
 
     <!--  Magnific Popup css file  -->
-    <link rel="stylesheet" href="./assets/vendor/Magnific-Popup/dist/magnific-popup.css">
+    <link rel="stylesheet" href="./assets/package/Magnific-Popup/dist/magnific-popup.css">
 
 
     <!--  Owl-carousel css file  -->
-    <link rel="stylesheet" href="./assets/vendor/owl-carousel/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="./assets/vendor/owl-carousel/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./assets/package/owl-carousel/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/package/owl-carousel/css/owl.theme.default.min.css">
 
 
     <!--  custom css file  -->
@@ -34,13 +37,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;1,600&display=swap" rel="stylesheet">
 
     <!-- responsive tab css file -->
-    <link href="./assets/vendor/responsive-tabs/dist/css/responsive-tabs.css" rel="stylesheet">
-
+    <link href="./assets/package/responsive-tabs/dist/css/responsive-tabs.css" rel="stylesheet">
 </head>
 
-<body id="body">
-
-
+<body id="body" class="<?php echo $_SESSION['dark_mode'] == 'on' ? 'dark-mode' : '' ?>">
     <!--  ======================= Start Header Area ============================== -->
 
     <header class="header_area">
@@ -56,23 +56,23 @@
                     <div class="mr-auto"></div>
                     <ul class="navbar-nav">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#body">Home <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="body">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#about">about</a>
+                            <a class="nav-link" href="about">about</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#service">services</a>
+                            <a class="nav-link" href="service">services</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#portfolio">portfolio</a>
+                            <a class="nav-link" href="portfolio">portfolio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#contact">contact</a>
+                            <a class="nav-link" href="contact">contact</a>
                         </li>
                         <li class="nav-item d-flex justify-content-center align-items-center px-2 mx-1">
                             <label for="checkbox" class="switch">
-                                <input type="checkbox" id="checkbox">
+                                <input type="checkbox" <?php echo $_SESSION['dark_mode'] == 'on' ? 'checked' : '' ?> id="checkbox">
                                 <span class="slider round"></span>
                             </label>
                         </li>
@@ -86,27 +86,27 @@
     <aside>
         <ul class="navbar-nav" id="aside_nav">
             <li>
-                <a class="nav-link" href="#body">
+                <a class="nav-link" href="body">
                     <i class="fas fa-home"></i>
                 </a>
             </li>
             <li>
-                <a class="nav-link" href="#about">
+                <a class="nav-link" href="about">
                     <i class="fas fa-user"></i>
                 </a>
             </li>
             <li>
-                <a class="nav-link" href="#service">
+                <a class="nav-link" href="service">
                     <i class="fab fa-servicestack"></i>
                 </a>
             </li>
             <li>
-                <a class="nav-link" href="#portfolio">
+                <a class="nav-link" href="portfolio">
                     <i class="fas fa-images"></i>
                 </a>
             </li>
             <li>
-                <a class="nav-link" href="#contact">
+                <a class="nav-link" href="contact">
                     <i class="fas fa-phone-alt"></i>
                 </a>
             </li>
@@ -125,7 +125,7 @@
                 <div class="row">
                     <div class="col-lg-6 col-md-12 site-title">
                         <h3 class="title-text">Hey</h3>
-                        <h1 class="title-text text-uppercase">I am ar arif</h1>
+                        <h1 class="title-text text-uppercase">I'<span style="text-transform: lowercase">m</span> ar. arif</h1>
                         <h4 class="title-text text-uppercase">Developer / Designer / Doer</h4>
                         <div class="site-buttons">
                             <div class="d-flex flex-row flex-wrap">
@@ -439,9 +439,9 @@
                                                             <h6>Composer :</h6>
                                                             <div class="progress">
                                                                 <div class="progress-bar progress-bar-striped"
-                                                                    role="progressbar" style="width: 90%"
+                                                                    role="progressbar" style="width: 85%"
                                                                     aria-valuenow="100" aria-valuemin="0"
-                                                                    aria-valuemax="100">90%</div>
+                                                                    aria-valuemax="100">85%</div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -1295,17 +1295,17 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
     <!--  isotope js library  -->
-    <script src="./assets/vendor/isotope/mixitup.min.js"></script>
+    <script src="./assets/package/isotope/mixitup.min.js"></script>
 
     <!--  Magnific popup script file  -->
-    <script src="./assets/vendor/Magnific-Popup/dist/jquery.magnific-popup.min.js"></script>
+    <script src="./assets/package/Magnific-Popup/dist/jquery.magnific-popup.min.js"></script>
 
     <!--  Owl-carousel js file  -->
-    <script src="./assets/vendor/owl-carousel/js/owl.carousel.min.js"></script>
+    <script src="./assets/package/owl-carousel/js/owl.carousel.min.js"></script>
 
     <!-- Responsive tabs -->
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-    <script src="./assets/vendor/responsive-tabs/dist/js/responsive-tabs.js"></script>
+    <script src="./assets/package/responsive-tabs/dist/js/responsive-tabs.js"></script>
 
     <!--  custom js file  -->
     <script src="./assets/js/main.js"></script>
@@ -1315,7 +1315,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/EasePack.min.js"></script>
 
     <!-- Tag canvas file -->
-    <script src="./assets/vendor/tag-canvas/tagcanvas.js" type="text/javascript"></script>
+    <script src="./assets/package/tag-canvas/tagcanvas.js" type="text/javascript"></script>
 
     <!-- aimation js file -->
     <script src="./assets/js/float.js"></script>

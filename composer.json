@@ -1,0 +1,23 @@
+{
+    "name": "user/portfolio",
+    "description": "\"This is my personal portfolio project\"",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Arif32-dev",
+            "email": "dragonwarrior062@gmail.com"
+        }
+    ],
+    "require": {
+        "google/apiclient": "^2.7",
+        "phpmailer/phpmailer": "^6.1"
+    },
+    "scripts": {
+        "post-update-cmd": "Google_Task_Composer::cleanup"
+    },
+    "extra": {
+        "google/apiclient-services": [
+            "Gmail"
+        ]
+    }
+}
