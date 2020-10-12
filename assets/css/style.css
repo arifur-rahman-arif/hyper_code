@@ -436,7 +436,7 @@ aside ul a {
     background: #8ed6fb;
 }
 .skill-boxes:nth-child(12):hover .progress-bar{
-    --skill-width: 85%;
+    --skill-width: 80%;
     animation: progress_animation 1s ease-in-out;
     -webkit-animation: progress_animation 1s ease-in-out;
 }
@@ -460,7 +460,7 @@ aside ul a {
     background: #f8981d;
 }
 .skill-boxes:nth-child(15):hover .progress-bar{
-    --skill-width: 82%;
+    --skill-width: 80%;
     animation: progress_animation 1s ease-in-out;
     -webkit-animation: progress_animation 1s ease-in-out;
 }
@@ -468,7 +468,7 @@ aside ul a {
     background: #00749a;
 }
 .skill-boxes:nth-child(16):hover .progress-bar{
-    --skill-width: 90%;
+    --skill-width: 85%;
     animation: progress_animation 1s ease-in-out;
     -webkit-animation: progress_animation 1s ease-in-out;
 }
@@ -476,7 +476,7 @@ aside ul a {
     background: #9B5C8F;
 }
 .skill-boxes:nth-child(17):hover .progress-bar{
-    --skill-width: 83%;
+    --skill-width: 80%;
     animation: progress_animation 1s ease-in-out;
     -webkit-animation: progress_animation 1s ease-in-out;
 }
@@ -711,6 +711,46 @@ aside ul a {
     filter: brightness(1.1) drop-shadow(1px 8px 30px #b1afaf);
 }
 
+.project-area .our-project .img-box {
+    position: relative;
+    overflow: hidden;
+}
+.our-project .img-box ul {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0;
+    bottom: -20%;
+    padding: 0;
+    z-index: 5;
+    transition: bottom 0.5s ease-in-out;
+    -webkit-transition: bottom 0.5s ease-in-out;
+    -moz-transition: bottom 0.5s ease-in-out;
+    -ms-transition: bottom 0.5s ease-in-out;
+    -o-transition: bottom 0.5s ease-in-out;
+}
+.our-project .img-box ul li{
+    list-style-type: none;
+}
+.our-project .img-box ul li .link{
+    color: whitesmoke;
+    background: var(--gradient-color);
+    text-align: center;
+    border-radius: 4px;
+    font-size: 20px;
+    transition: color 0.5s ease-in-out;
+    -webkit-transition: color 0.5s ease-in-out;
+    -moz-transition: color 0.5s ease-in-out;
+    -ms-transition: color 0.5s ease-in-out;
+    -o-transition: color 0.5s ease-in-out;
+}
+.our-project .img-box ul li .link:hover{
+    color: black;
+}
+.project-area .our-project:hover .img-box > ul {
+    bottom: 8%;
+}
 
 /* End Project Area */ 
 
@@ -787,7 +827,7 @@ footer.footer-area .social a:hover > i{
 footer.footer-area .social .dark_mode_hover:hover > i{
     color: var(--primary-color) !important;
 }
-.footer-area form label, input {
+.footer-area form label, input, textarea {
     font: normal 500 15px/ 20px var(--roboto);
 }
 .footer-area .dark-form label{

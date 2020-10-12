@@ -60,15 +60,15 @@ $(document).ready(function () {
     /* Dark Mode functionality */
     $('.nav-item  #checkbox').click(function (e) {
         if ($('.nav-item > .switch > #checkbox').prop('checked') == true) {
-            sendDark_mode_session('dark_mode');
+            sendDark_mode_session('dark_mode', $(e.currentTarget).attr('data-url'));
         } else {
-            sendDark_mode_session('normal_mode');
+            sendDark_mode_session('normal_mode', $(e.currentTarget).attr('data-url'));
         }
     })
 
-    function sendDark_mode_session(mode) {
+    function sendDark_mode_session(mode, url) {
         $.ajax({
-            url: document.location.protocol + '//' + window.location.hostname + window.location.pathname + 'session.php',
+            url: url + '/session.php',
             data: { mode },
             type: 'post',
             success: function (res) {
@@ -102,7 +102,6 @@ $(document).ready(function () {
         $('.services > .card-body > p').addClass('dark-mode-service_p');
         $('.owl-item p').css('color', 'whitesmoke');
 
-
         $('.footer-area').removeClass('footer-bg');
         $('.footer-area').addClass('dark_mode_footer');
         $('.footer-area .social a > i').css('color', 'whitesmoke');
@@ -119,6 +118,7 @@ $(document).ready(function () {
         $('.services-title a').css('color', '#007bff');
         $('.services > .card-body > p').removeClass('dark-mode-service_p');
         $('.owl-item p').css('color', '#777777');
+
 
         $('.footer-area').addClass('footer-bg');
         $('.footer-area').removeClass('dark_mode_footer');
@@ -138,7 +138,48 @@ $(document).ready(function () {
     /* send email on form submit */
     $('footer form').on('submit', function (e) {
         e.preventDefault();
-        let formData = $(this).serializeArray();
+        let formData = $(this).serialize();
+        $.ajax({
+            url: $(e.currentTarget).find('#url').val() + '/email.php',
+            data: formData,
+            type: 'post',
+            success: function (res) {
+                console.log(res);
+                switch (res) {
+                    case 'wrong':
+                        $(e.currentTarget).prepend(`
+                            <div class="alert alert-danger" role="alert">
+                                Something went wrong
+                            </div>
+                        `);
+                        break;
+
+                    case 'empty':
+                        $(e.currentTarget).prepend(`
+                            <div class="alert alert-warning" role="alert">
+                                Name or email is required
+                            </div>
+                        `);
+                        break;
+
+                    case 'sent':
+                        $(e.currentTarget).prepend(`
+                            <div class="alert alert-success" role="alert">
+                                Email sent successfully. Check inbox within a day.
+                            </div>
+                        `);
+                        break;
+
+                    default:
+                        $(e.currentTarget).prepend(`
+                            <div class="alert alert-danger" role="alert">
+                                Something went wrong
+                            </div>
+                        `);
+                        break;
+                }
+            }
+        })
     })
     /* end of form submit */
 
@@ -151,5 +192,10 @@ $(document).ready(function () {
         console.log(sec_url);
     })
     /* end of scroll pages */
+
+    /* Globe link redirection prevent */
+    $('#myCanvasContainer ul li a').click(function (e) {
+        e.preventDefault();
+    })
 
 });

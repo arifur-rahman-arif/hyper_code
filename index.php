@@ -1,5 +1,10 @@
  <?php 
     session_start();
+    function url(){
+        $protocall = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS']) == 'on' ? "https" : "http";
+        $url = str_replace("\\",'/',"" . $protocall ."://".$_SERVER['HTTP_HOST'].substr(getcwd(),strlen($_SERVER['DOCUMENT_ROOT'])));
+        return $url;
+    }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -42,7 +47,6 @@
 
 <body id="body" class="<?php echo $_SESSION['dark_mode'] == 'on' ? 'dark-mode' : '' ?>">
     <!--  ======================= Start Header Area ============================== -->
-
     <header class="header_area">
         <div class="main-menu">
             <nav class="navbar navbar-expand-lg navbar-light">
@@ -72,7 +76,8 @@
                         </li>
                         <li class="nav-item d-flex justify-content-center align-items-center px-2 mx-1">
                             <label for="checkbox" class="switch">
-                                <input type="checkbox" <?php echo $_SESSION['dark_mode'] == 'on' ? 'checked' : '' ?> id="checkbox">
+                                <input data-url="<?php echo url() ?>" 
+                                    type="checkbox" <?php echo $_SESSION['dark_mode'] == 'on' ? 'checked' : '' ?> id="checkbox">
                                 <span class="slider round"></span>
                             </label>
                         </li>
@@ -408,9 +413,9 @@
                                                             <h6>WebPack :</h6>
                                                             <div class="progress">
                                                                 <div class="progress-bar progress-bar-striped"
-                                                                    role="progressbar" style="width: 85%"
+                                                                    role="progressbar" style="width: 80%"
                                                                     aria-valuenow="100" aria-valuemin="0"
-                                                                    aria-valuemax="100">85%</div>
+                                                                    aria-valuemax="100">80%</div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -455,9 +460,9 @@
                                                             <h6>MySQL :</h6>
                                                             <div class="progress">
                                                                 <div class="progress-bar progress-bar-striped"
-                                                                    role="progressbar" style="width: 82%"
+                                                                    role="progressbar" style="width: 80%"
                                                                     aria-valuenow="100" aria-valuemin="0"
-                                                                    aria-valuemax="100">82%</div>
+                                                                    aria-valuemax="100">80%</div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -471,9 +476,9 @@
                                                             <h6>WordPress :</h6>
                                                             <div class="progress">
                                                                 <div class="progress-bar progress-bar-striped"
-                                                                    role="progressbar" style="width: 90%"
+                                                                    role="progressbar" style="width: 85%"
                                                                     aria-valuenow="100" aria-valuemin="0"
-                                                                    aria-valuemax="100">90%</div>
+                                                                    aria-valuemax="100">85%</div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -487,9 +492,9 @@
                                                             <h6>WooCommerce :</h6>
                                                             <div class="progress">
                                                                 <div class="progress-bar progress-bar-striped"
-                                                                    role="progressbar" style="width: 83%"
+                                                                    role="progressbar" style="width: 80%"
                                                                     aria-valuenow="100" aria-valuemin="0"
-                                                                    aria-valuemax="100">83%</div>
+                                                                    aria-valuemax="100">80%</div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -864,8 +869,8 @@
                                 <h2 class="p-3 years">1.5</h2>
                                 <h2>
                                     <span>Years</span>
-                                    <span>Experience In</span>
-                                    <span>Working</span>
+                                    <span>of</span>
+                                    <span>Experience</span>
                                 </h2>
                             </div>
                             <div class="row">
@@ -941,7 +946,7 @@
                                     <p class="card-text text-secondary">
                                         I develop back-end of a website using back-end programming language such
                                         as
-                                        OOP PHP/Python/Node etc
+                                        OOP PHP
                                     </p>
                                 </div>
                             </div>
@@ -1021,119 +1026,37 @@
                         <div class="our-project">
                             <div class="img">
                                 <a class="test-popup-link" href="./assets/img/portfolio/p1.jpg">
-                                    <img src="./assets/img/portfolio/p1.jpg" alt="portfolio-1" class="img-fluid">
+                                    <div class="img-box d-inline-block position-relative">
+                                        <img src="./assets/img/portfolio/p1.jpg" alt="portfolio-1" class="img-fluid">
+                                        <ul class="project_hover d-flex justify-content-center align-items-center">
+                                                <li ><a href="#" class="d-block py-2 px-3 link"><i class="fas fa-external-link-alt"></i></a></li>
+                                        </ul>
+                                    </div>
                                 </a>
                             </div>
                             <div class="title py-4">
                                 <h4 class="text-uppercase">Minimul Desing</h4>
-                                <span class="text-secondary">Latest, Portfolio</span>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 text-center element-item mix popular">
+                    <div class="col-lg-4 col-md-6 col-sm-12 text-center element-item mix latest">
                         <div class="our-project">
                             <div class="img">
-                                <a class="test-popup-link" href="./assets/img/portfolio/p2.jpg">
-                                    <img src="./assets/img/portfolio/p2.jpg" alt="portfolio-2" class="img-fluid">
+                                <a class="test-popup-link" href="./assets/img/portfolio/p1.jpg">
+                                    <div class="img-box d-inline-block position-relative">
+                                        <img src="./assets/img/portfolio/p1.jpg" alt="portfolio-1" class="img-fluid">
+                                        <ul class="project_hover d-flex justify-content-center align-items-center">
+                                                <li ><a href="#" class="d-block py-2 px-3 link"><i class="fas fa-external-link-alt"></i></a></li>
+                                        </ul>
+                                    </div>
                                 </a>
                             </div>
                             <div class="title py-4">
-                                <h4 class="text-uppercase">Paint Wall</h4>
-                                <span class="text-secondary">Popular, Portfolio</span>
+                                <h4 class="text-uppercase">Minimul Desing</h4>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 text-center element-item mix popular">
-                        <div class="our-project">
-                            <div class="img">
-                                <a class="test-popup-link" href="./assets/img/portfolio/p3.jpg">
-                                    <img src="./assets/img/portfolio/p3.jpg" alt="portfolio-3" class="img-fluid">
-                                </a>
-                            </div>
-                            <div class="title py-4">
-                                <h4 class="text-uppercase">Female light</h4>
-                                <span class="text-secondary">Popular, Portfolio</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 text-center element-item mix upcoming">
-                        <div class="our-project">
-                            <div class="img">
-                                <a class="test-popup-link" href="./assets/img/portfolio/p4.jpg">
-                                    <img src="./assets/img/portfolio/p4.jpg" alt="portfolio-4" class="img-fluid">
-                                </a>
-                            </div>
-                            <div class="title py-4">
-                                <h4 class="text-uppercase">Fourth Air</h4>
-                                <span class="text-secondary">Upcoming, Portfolio</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 text-center element-item mix upcoming">
-                        <div class="our-project">
-                            <div class="img">
-                                <a class="test-popup-link" href="./assets/img/portfolio/p5.jpg">
-                                    <img src="./assets/img/portfolio/p5.jpg" alt="portfolio-5" class="img-fluid">
-                                </a>
-                            </div>
-                            <div class="title py-4">
-                                <h4 class="text-uppercase">Muliple fown</h4>
-                                <span class="text-secondary">Upcoming, Portfolio</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 text-center element-item mix following">
-                        <div class="our-project">
-                            <div class="img">
-                                <a class="test-popup-link" href="./assets/img/portfolio/p6.jpg">
-                                    <img src="./assets/img/portfolio/p6.jpg" alt="portfolio-6" class="img-fluid">
-                                </a>
-                            </div>
-                            <div class="title py-4">
-                                <h4 class="text-uppercase">Together sign</h4>
-                                <span class="text-secondary">Following, Portfolio</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 text-center element-item mix following">
-                        <div class="our-project">
-                            <div class="img">
-                                <a class="test-popup-link" href="./assets/img/portfolio/p7.jpg">
-                                    <img src="./assets/img/portfolio/p7.jpg" alt="portfolio-7" class="img-fluid">
-                                </a>
-                            </div>
-                            <div class="title py-4">
-                                <h4 class="text-uppercase">Green Heaven</h4>
-                                <span class="text-secondary">Following, Portfolio</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 text-center element-item mix following">
-                        <div class="our-project">
-                            <div class="img">
-                                <a class="test-popup-link" href="./assets/img/portfolio/p8.jpg">
-                                    <img src="./assets/img/portfolio/p8.jpg" alt="portfolio-8" class="img-fluid">
-                                </a>
-                            </div>
-                            <div class="title py-4">
-                                <h4 class="text-uppercase">Fly Male</h4>
-                                <span class="text-secondary">Following, Portfolio</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 text-center element-item mix upcoming">
-                        <div class="our-project">
-                            <div class="img">
-                                <a class="test-popup-link" href="./assets/img/portfolio/p9.jpg">
-                                    <img src="./assets/img/portfolio/p9.jpg" alt="portfolio-9" class="img-fluid">
-                                </a>
-                            </div>
-                            <div class="title py-4">
-                                <h4 class="text-uppercase">Camera Lens</h4>
-                                <span class="text-secondary">Upcoming, Portfolio</span>
-                            </div>
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
         </section>
@@ -1232,10 +1155,11 @@
             <div class="row">
                 <div class="col-md-6 col-12 pl-5">
                     <form>
+                        <input type="hidden" name="url" value="<?php echo url() ?>" id="url">
                         <div class="form-row">
                             <div class="form-group col-md-6">
                                 <label for="input_name">Name :</label>
-                                <input type="text" class="form-control" name="name" id="input_name"
+                                <input type="text" class="form-control" required name="name" id="input_name"
                                     placeholder="Your Name">
                             </div>
                             <div class="form-group col-md-6">
