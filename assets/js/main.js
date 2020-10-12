@@ -194,7 +194,7 @@ $(document).ready(function () {
     /* end of scroll pages */
 
     /* Globe link redirection prevent */
-    $('#myCanvasContainer ul li a').click(function (e) {
+    $('#myCanvasContainer ul li a, .project-area .our-project .project_hover .btn').click(function (e) {
         e.preventDefault();
     })
 
