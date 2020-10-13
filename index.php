@@ -867,42 +867,42 @@
                  <div class="d-flex align-items-center flex-wrap mb-3 flex-column justify-content-center flex-md-row button-group">
                      <button type="button" class="active px-md-3" id="btn1" data-filter="*">All</button>
                      <button type="button" class="px-md-3" data-filter=".popular">E-commerce</button>
-                     <button type="button" class="px-md-3" data-filter=".latest">Test Project</button>
+                     <button type="button" class="px-md-3" data-filter=".latest">Wordpress</button>
                      <button type="button" class="px-md-3" data-filter=".following">React</button>
-                     <button type="button" class="px-md-3" data-filter=".upcoming">Wordpress</button>
+                     <button type="button" class="px-md-3" data-filter=".upcoming">Test Project</button>
                  </div>
 
                  <div class="row grid">
                      <div class="col-lg-4 col-md-6 col-sm-12 text-center element-item mix latest">
                          <div class="our-project">
                              <div class="img">
-                                 <a class="test-popup-link" href="./assets/img/portfolio/p1.jpg">
+                                 <a class="test-popup-link" href="./assets/img/project/ashion.png">
                                      <div class="img-box d-inline-block position-relative">
-                                         <img src="./assets/img/portfolio/p1.jpg" alt="portfolio-1" class="img-fluid">
+                                         <img src="./assets/img/project/ashion.png" alt="Ashion" class="img-fluid">
                                          <ul class="project_hover d-flex justify-content-center align-items-center">
                                              <li><a href="#" aria-label="open-modal" data-modal="open-modal" class="btn d-flex justify-content-center align-items-center mx-3 link"><i class="fas fa-info"></i></a></li>
-                                             <li><a href="#" class="d-flex justify-content-center align-items-center mx-3 link"><i class="fas fa-external-link-alt"></i></a></li>
+                                             <li><a target="blank" href="http://online-shop2.infinityfreeapp.com/" class="d-flex justify-content-center align-items-center mx-3 link"><i class="fas fa-external-link-alt"></i></a></li>
                                          </ul>
                                      </div>
                                  </a>
                              </div>
-                             <div class="modal" id="modal-1" role="dialog" aria-hidden="true" data-modal>
+                             <div class="modal" role="dialog" aria-hidden="true" data-modal>
                                  <div class="modal-content">
                                      <div class="modal-header">
                                          <button role="button" class="icon-close" aria-label="close-modal" data-modal="close-modal"><i class="fas fa-cut"></i></button>
-                                         <h2 class="modal-title">This is the Modal Header</h2>
+                                         <h2 class="modal-title">Ashion Theme</h2>
                                      </div>
                                      <div class="modal-body">
-                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                                             magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                             consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                                             pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-                                             est laborum. <a href="#">Visit Site</a></p>
+                                         <p>I have built this website with my custom made woo-commerce supported theme. 
+                                             This theme has a very beautiful UI and editable via WordPress dashboard.   
+                                             <a target="blank" href="http://online-shop2.infinityfreeapp.com/">Visit Site</a></p>
                                              <div class="project_tag">
                                                  <span>HTML</span>
                                                  <span>CSS</span>
                                                  <span>JavaScript</span>
                                                  <span>WordPress</span>
+                                                 <span>Custom Theme</span>
+                                                 <span>OOP PHP</span>
                                              </div>
                                      </div>
                                      <div class="modal-footer">
@@ -911,10 +911,95 @@
                                  </div>
                              </div>
                              <div class="title py-4">
-                                 <h4 class="text-uppercase">Minimul Desing</h4>
+                                 <h4 class="text-uppercase">Ashion</h4>
                              </div>
                          </div>
                      </div>
+
+                     <div class="col-lg-4 col-md-6 col-sm-12 text-center element-item mix latest">
+                         <div class="our-project">
+                             <div class="img">
+                                 <a class="test-popup-link" href="./assets/img/project/bb-blogger.png">
+                                     <div class="img-box d-inline-block position-relative">
+                                         <img src="./assets/img/project/bb-blogger.png" alt="Ashion" class="img-fluid">
+                                         <ul class="project_hover d-flex justify-content-center align-items-center">
+                                             <li><a href="#" aria-label="open-modal" data-modal="open-modal" class="btn d-flex justify-content-center align-items-center mx-3 link"><i class="fas fa-info"></i></a></li>
+                                             <li><a target="blank" href="http://nemo.epizy.com/" class="d-flex justify-content-center align-items-center mx-3 link"><i class="fas fa-external-link-alt"></i></a></li>
+                                         </ul>
+                                     </div>
+                                 </a>
+                             </div>
+                             <div class="modal" role="dialog" aria-hidden="true" data-modal>
+                                 <div class="modal-content">
+                                     <div class="modal-header">
+                                         <button role="button" class="icon-close" aria-label="close-modal" data-modal="close-modal"><i class="fas fa-cut"></i></button>
+                                         <h2 class="modal-title">Brian Blogger</h2>
+                                     </div>
+                                     <div class="modal-body">
+                                         <p>This website built with Wordpress astra free template. I have customized that theme And made some changes to make it look beatifull 
+                                             <a target="blank" href="http://nemo.epizy.com/">Visit Site</a></p>
+                                             <div class="project_tag">
+                                                 <span>CSS</span>
+                                                 <span>WordPress</span>
+                                                 <span>Theme Customization</span>
+                                                 <span>PHP</span>
+                                             </div>
+                                     </div>
+                                     <div class="modal-footer">
+                                         <button role="button" class="btn-close" aria-label="close-modal" data-modal="close-modal">Close</button>
+                                     </div>
+                                 </div>
+                             </div>
+                             <div class="title py-4">
+                                 <h4 class="text-uppercase">Brian Blogger</h4>
+                             </div>
+                         </div>
+                     </div>
+
+                     <div class="col-lg-4 col-md-6 col-sm-12 text-center element-item mix latest">
+                         <div class="our-project">
+                             <div class="img">
+                                 <a class="test-popup-link" href="./assets/img/project/online-exam.png">
+                                     <div class="img-box d-inline-block position-relative">
+                                         <img src="./assets/img/project/online-exam.png" alt="Ashion" class="img-fluid">
+                                         <ul class="project_hover d-flex justify-content-center align-items-center">
+                                             <li><a href="#" aria-label="open-modal" data-modal="open-modal" class="btn d-flex justify-content-center align-items-center mx-3 link"><i class="fas fa-info"></i></a></li>
+                                             <li><a target="blank" href="http://vison.rf.gd/" class="d-flex justify-content-center align-items-center mx-3 link"><i class="fas fa-external-link-alt"></i></a></li>
+                                         </ul>
+                                     </div>
+                                 </a>
+                             </div>
+                             <div class="modal" role="dialog" aria-hidden="true" data-modal>
+                                 <div class="modal-content">
+                                     <div class="modal-header">
+                                         <button role="button" class="icon-close" aria-label="close-modal" data-modal="close-modal"><i class="fas fa-cut"></i></button>
+                                         <h2 class="modal-title">Online Exam</h2>
+                                     </div>
+                                     <div class="modal-body">
+                                         <p> I have built this website for MCQ Exam system. This theme is able to handle school or college MCQ Exam. 
+                                              I have developed a plugin for this theme for admin to handle creating, managing exam paper and also for managing teacher's. 
+                                             <a target="blank" href="http://vison.rf.gd/">Visit Site</a></p>
+                                             <div class="project_tag">
+                                                 <span>HTML</span>
+                                                 <span>CSS</span>
+                                                 <span>JavaScript</span>
+                                                 <span>Gmail API</span>
+                                                 <span>OOP PHP</span>
+                                                 <span>Custom Theme</span>
+                                                 <span>Custom Plugin</span>
+                                             </div>
+                                     </div>
+                                     <div class="modal-footer">
+                                         <button role="button" class="btn-close" aria-label="close-modal" data-modal="close-modal">Close</button>
+                                     </div>
+                                 </div>
+                             </div>
+                             <div class="title py-4">
+                                 <h4 class="text-uppercase">Online Exam</h4>
+                             </div>
+                         </div>
+                     </div>
+                     
                  </div>
              </div>
          </section>
@@ -1092,7 +1177,7 @@
      <script src="./assets/js/float.js"></script>
 
      <!-- model js file -->
-     <script src="./assets/package/model/modelo.min.js"></script>
+     <script src="./assets/package/model/modelo.js"></script>
 
      <!-- writing inline javascript -->
      <script>
@@ -1110,10 +1195,7 @@
                  centreImage: './assets/img/logo.png',
              });
          });
-     </script>
-     <script>
-         $('#modal-1').modelo();
-     </script>
+     </script> -->
 
  </body>
 

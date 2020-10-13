@@ -189,7 +189,6 @@ $(document).ready(function () {
         let sec_id = $(e.currentTarget).attr('href');
         var sec = document.getElementById(sec_id);
         sec.scrollIntoView();
-        console.log(sec_url);
     })
     /* end of scroll pages */
 

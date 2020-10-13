@@ -23,10 +23,12 @@
 .modal {
     display: none;
     position: fixed;
+    top: 20%;
     left: 50%;
     margin-top: -35px;
     padding: 35px;
-    width: 100%;
+    min-width: 700px;
+    width: 60%;
     color: #222;
     font-size: .875rem;
     font-family: var(--roboto);
@@ -35,6 +37,12 @@
     z-index: 999;
     visibility: hidden;
     transform: translateX(-50%);
+}
+
+@media screen and (max-width: 720px) {
+    .modal {
+        min-width: 100%;
+    }
 }
 
 .modal-content {
@@ -144,4 +152,5 @@
     color: whitesmoke;
     padding: 3px 7px;
     border-radius: 4px;
+    margin: 6px;
 }
