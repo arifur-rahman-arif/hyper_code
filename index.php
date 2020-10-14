@@ -75,7 +75,7 @@
                          <li class="nav-item">
                              <a class="nav-link" href="contact">contact</a>
                          </li>
-                         <li class="nav-item d-flex justify-content-center align-items-center px-2 mx-1">
+                         <li class="nav-item dark_mode_toggler d-flex justify-content-center align-items-center px-2 mx-1">
                              <label for="checkbox" class="switch">
                                  <input data-url="<?php echo url() ?>" type="checkbox" <?php echo $_SESSION['dark_mode'] == 'on' ? 'checked' : '' ?> id="checkbox">
                                  <span class="slider round"></span>
@@ -168,15 +168,10 @@
                              <p class="para">
                                  Hello, I'm a professional web developer/designer.
                              </p>
-                             <p class="para">
-                                 I have variety of skills that I can implement it on my work with accuracy. Therefore I
-                                 work hard not only to deliver
-                                 high performance to my clients but also I starve to learn new tech so that I can ensure
-                                 a diverse contribution to my
-                                 work and also in web dev sector.
-                                 Also my dream is to develop a tech company/organization that will contribute in computer
-                                 technology in future.
-                             </p>
+                             <article class="text-anim_container p-0">
+                                 <span class="text-anim p-0">
+                                 </span>
+                             </article>
                          </div>
                          <a href="./assets/ar-arif-resume.pdf" download class="btn button primary-button text-uppercase">Download cv</a>
                      </div>
@@ -1592,6 +1587,9 @@
 
      <!-- model js file -->
      <script src="./assets/package/model/modelo.js"></script>
+
+     <!-- Typed js file -->
+     <script src="./assets/package/typed/typed.min.js"></script>
 
     <!--  custom js file  -->
      <script src="./assets/js/main.js"></script>

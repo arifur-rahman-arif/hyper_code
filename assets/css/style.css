@@ -869,6 +869,15 @@ aside ul a {
     padding: 1rem 7rem;
 }
 
+.site-main .about-area article span {
+    color: var(--text-color);
+    font: normal 500 16px/ 25px var(--roboto);
+}
+
+.site-main .about-area article .typed-cursor {
+    font-weight: bolder !important;
+}
+
 .site-main .about-area .client {
     background: #ffffff10;
     box-shadow: var(--box-shadow);

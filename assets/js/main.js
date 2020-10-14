@@ -1,10 +1,14 @@
-$(document).ready(function () {
+$(document).ready(function() {
 
+    /* main navigation menu active functionality */
+    $('.header_area .navbar-nav > li:not(.dark_mode_toggler)').on('click', function(e) {
+        $('.header_area .navbar-nav > li:not(.dark_mode_toggler)').removeClass('active');
+        $(e.currentTarget).addClass('active');
+    })
 
+    /* project area buttons active link functionality */
     let $btns = $('.project-area .button-group button');
-
-
-    $btns.click(function (e) {
+    $btns.click(function(e) {
 
         $('.project-area .button-group button').removeClass('active');
         e.target.classList.add('active');
@@ -15,7 +19,9 @@ $(document).ready(function () {
 
     $('.project-area .grid .img img').magnificPopup({
         type: 'image',
-        gallery: { enabled: true }
+        gallery: {
+            enabled: true
+        }
     });
 
 
@@ -38,9 +44,10 @@ $(document).ready(function () {
     // sticky navigation menu
 
     let nav_offset_top = $('.header_area').height() + 180;
+
     function navbarFixed() {
         if ($('.header_area').length) {
-            $(window).scroll(function () {
+            $(window).scroll(function() {
                 let scroll = $(window).scrollTop();
                 if (scroll >= nav_offset_top) {
                     $('.navbar-collapse').removeClass('show');
@@ -55,7 +62,7 @@ $(document).ready(function () {
     navbarFixed();
 
     /* Dark Mode functionality */
-    $('.nav-item  #checkbox').click(function (e) {
+    $('.nav-item  #checkbox').click(function(e) {
         if ($('.nav-item > .switch > #checkbox').prop('checked') == true) {
             sendDark_mode_session('dark_mode', $(e.currentTarget).attr('data-url'));
         } else {
@@ -66,9 +73,11 @@ $(document).ready(function () {
     function sendDark_mode_session(mode, url) {
         $.ajax({
             url: url + '/session.php',
-            data: { mode },
+            data: {
+                mode
+            },
             type: 'post',
-            success: function (res) {
+            success: function(res) {
                 console.log(res);
                 if (res == 'on') {
                     $(document.body).addClass('dark-mode');
@@ -86,10 +95,12 @@ $(document).ready(function () {
     } else {
         normal_mode();
     }
+
     function dark_mode() {
 
         $('.site-main .site-banner').removeClass('banner-bg');
         $('.about-title p').css('color', 'whitesmoke');
+        $('.about-area .text-anim_container > span').css('color', 'whitesmoke');
 
         $('.services-title p').css('color', 'whitesmoke');
         $('.services-title a').css('color', 'black');
@@ -110,6 +121,7 @@ $(document).ready(function () {
     function normal_mode() {
         $('.site-main .site-banner').addClass('banner-bg');
         $('.about-title p').css('color', '#777777');
+        $('.about-area .text-anim_container > span').css('color', '#777777');
 
         $('.services-title p').css('color', '#777777');
         $('.services-title a').css('color', '#007bff');
@@ -126,21 +138,21 @@ $(document).ready(function () {
     /* dark mode end */
 
     /* Side navigation active design */
-    $('aside > ul > li').click(function (e) {
+    $('aside > ul > li').click(function(e) {
         $('aside > ul > li').removeClass('active_side_nav');
         $(e.currentTarget).addClass('active_side_nav');
     })
     /* Side navigation active design end */
 
     /* send email on form submit */
-    $('footer form').on('submit', function (e) {
+    $('footer form').on('submit', function(e) {
         e.preventDefault();
         let formData = $(this).serialize();
         $.ajax({
             url: $(e.currentTarget).find('#url').val() + '/email.php',
             data: formData,
             type: 'post',
-            success: function (res) {
+            success: function(res) {
                 console.log(res);
                 switch (res) {
                     case 'wrong':
@@ -181,7 +193,7 @@ $(document).ready(function () {
     /* end of form submit */
 
     /* scroll to pages */
-    $('.header_area .navbar-nav a, aside > ul > li > a, .services-area .sroll_to_contact').click(function (e) {
+    $('.header_area .navbar-nav a, aside > ul > li > a, .services-area .sroll_to_contact').click(function(e) {
         e.preventDefault();
         let sec_id = $(e.currentTarget).attr('href');
         var sec = document.getElementById(sec_id);
@@ -189,9 +201,22 @@ $(document).ready(function () {
     })
     /* end of scroll pages */
 
-    /* Globe link redirection prevent */
-    $('#myCanvasContainer ul li a, .project-area .our-project .project_hover .btn').click(function (e) {
+    /* link redirection prevent */
+    $('#myCanvasContainer ul li a, .project-area .our-project .project_hover .btn').click(function(e) {
         e.preventDefault();
     })
+
+    /* Typing animation */
+    var typed = new Typed(".about-area .text-anim", {
+        strings: [``, `I have variety of skills that I can implement it on my work with accuracy. Therefore I
+                                 work hard not only to deliver
+                                 high performance to my clients but also I starve to learn new tech so that I can ensure
+                                 a diverse contribution to my
+                                 work and also in web dev sector.
+                                 Also my dream is to develop a tech company/organization that will contribute in computer
+                                 technology in future.`],
+        typeSpeed: 17,
+        cursorChar: '<i class="fas fa-i-cursor"></i>',
+    });
 
 });
