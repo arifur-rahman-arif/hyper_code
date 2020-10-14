@@ -769,7 +769,7 @@
                          <p class="para">
                              These are the services that I offer to my clients locally or internationally.
                              If you are interested in of these <a href="tel:+8801891852840">Contact me via phone</a>
-                             or <a href="#contact">Email</a>
+                             or <a class="sroll_to_contact" href="contact">Email</a>
                              so that I can reach
                              you.
                          </p>
@@ -866,19 +866,20 @@
 
                  <div class="d-flex align-items-center flex-wrap mb-3 flex-column justify-content-center flex-md-row button-group">
                      <button type="button" class="active px-md-3" id="btn1" data-filter="*">All</button>
-                     <button type="button" class="px-md-3" data-filter=".popular">E-commerce</button>
-                     <button type="button" class="px-md-3" data-filter=".latest">Wordpress</button>
-                     <button type="button" class="px-md-3" data-filter=".following">React</button>
-                     <button type="button" class="px-md-3" data-filter=".upcoming">Test Project</button>
+                     <button type="button" class="px-md-3" data-filter=".e-commerce">E-commerce</button>
+                     <button type="button" class="px-md-3" data-filter=".wordpress">Wordpress</button>
+                     <button type="button" class="px-md-3" data-filter=".react">React</button>
+                     <button type="button" class="px-md-3" data-filter=".test">Test Project</button>
                  </div>
 
                  <div class="row grid">
-                     <div class="col-lg-4 col-md-6 col-sm-12 text-center element-item mix latest">
+
+                     <div class="col-lg-4 col-md-6 col-sm-12 text-center element-item mix e-commerce wordpress">
                          <div class="our-project">
                              <div class="img">
-                                 <a class="test-popup-link" href="./assets/img/project/ashion.png">
+                                 <a class="test-popup-link">
                                      <div class="img-box d-inline-block position-relative">
-                                         <img src="./assets/img/project/ashion.png" alt="Ashion" class="img-fluid">
+                                         <img href="./assets/img/project/ashion.png" src="./assets/img/project/ashion.png" alt="Ashion" class="img-fluid">
                                          <ul class="project_hover d-flex justify-content-center align-items-center">
                                              <li><a href="#" aria-label="open-modal" data-modal="open-modal" class="btn d-flex justify-content-center align-items-center mx-3 link"><i class="fas fa-info"></i></a></li>
                                              <li><a target="blank" href="http://online-shop2.infinityfreeapp.com/" class="d-flex justify-content-center align-items-center mx-3 link"><i class="fas fa-external-link-alt"></i></a></li>
@@ -890,20 +891,23 @@
                                  <div class="modal-content">
                                      <div class="modal-header">
                                          <button role="button" class="icon-close" aria-label="close-modal" data-modal="close-modal"><i class="fas fa-cut"></i></button>
-                                         <h2 class="modal-title">Ashion Theme</h2>
+                                         <div class="modal_title d-flex justify-content-start flex-column align-items-start">
+                                             <h2 class="modal-title">Ashion Theme</h2>
+                                             <span>06 Sep, 2020</span>
+                                         </div>
                                      </div>
                                      <div class="modal-body">
-                                         <p>I have built this website with my custom made woo-commerce supported theme. 
-                                             This theme has a very beautiful UI and editable via WordPress dashboard.   
+                                         <p>I have built this website with my custom made woo-commerce supported theme.
+                                             This theme has a very beautiful UI and editable via WordPress dashboard.
                                              <a target="blank" href="http://online-shop2.infinityfreeapp.com/">Visit Site</a></p>
-                                             <div class="project_tag">
-                                                 <span>HTML</span>
-                                                 <span>CSS</span>
-                                                 <span>JavaScript</span>
-                                                 <span>WordPress</span>
-                                                 <span>Custom Theme</span>
-                                                 <span>OOP PHP</span>
-                                             </div>
+                                         <div class="project_tag">
+                                             <span>HTML</span>
+                                             <span>CSS</span>
+                                             <span>JavaScript</span>
+                                             <span>WordPress</span>
+                                             <span>Custom Theme</span>
+                                             <span>OOP PHP</span>
+                                         </div>
                                      </div>
                                      <div class="modal-footer">
                                          <button role="button" class="btn-close" aria-label="close-modal" data-modal="close-modal">Close</button>
@@ -916,12 +920,12 @@
                          </div>
                      </div>
 
-                     <div class="col-lg-4 col-md-6 col-sm-12 text-center element-item mix latest">
+                     <div class="col-lg-4 col-md-6 col-sm-12 text-center element-item mix wordpress">
                          <div class="our-project">
                              <div class="img">
-                                 <a class="test-popup-link" href="./assets/img/project/bb-blogger.png">
+                                 <a class="test-popup-link">
                                      <div class="img-box d-inline-block position-relative">
-                                         <img src="./assets/img/project/bb-blogger.png" alt="Ashion" class="img-fluid">
+                                         <img href="./assets/img/project/bb-blogger.png" src="./assets/img/project/bb-blogger.png" alt="Ashion" class="img-fluid">
                                          <ul class="project_hover d-flex justify-content-center align-items-center">
                                              <li><a href="#" aria-label="open-modal" data-modal="open-modal" class="btn d-flex justify-content-center align-items-center mx-3 link"><i class="fas fa-info"></i></a></li>
                                              <li><a target="blank" href="http://nemo.epizy.com/" class="d-flex justify-content-center align-items-center mx-3 link"><i class="fas fa-external-link-alt"></i></a></li>
@@ -933,17 +937,21 @@
                                  <div class="modal-content">
                                      <div class="modal-header">
                                          <button role="button" class="icon-close" aria-label="close-modal" data-modal="close-modal"><i class="fas fa-cut"></i></button>
-                                         <h2 class="modal-title">Brian Blogger</h2>
+                                         <div class="modal_title d-flex justify-content-start flex-column align-items-start">
+                                             <h2 class="modal-title">Brian Blogger</h2>
+                                             <span>15 Sep, 2020</span>
+                                         </div>
                                      </div>
                                      <div class="modal-body">
-                                         <p>This website built with Wordpress astra free template. I have customized that theme And made some changes to make it look beatifull 
+                                         <p>This website built with Wordpress astra free template.
+                                             I have customized that theme And made some changes to make it look beautiful.
                                              <a target="blank" href="http://nemo.epizy.com/">Visit Site</a></p>
-                                             <div class="project_tag">
-                                                 <span>CSS</span>
-                                                 <span>WordPress</span>
-                                                 <span>Theme Customization</span>
-                                                 <span>PHP</span>
-                                             </div>
+                                         <div class="project_tag">
+                                             <span>CSS</span>
+                                             <span>WordPress</span>
+                                             <span>Theme Customization</span>
+                                             <span>PHP</span>
+                                         </div>
                                      </div>
                                      <div class="modal-footer">
                                          <button role="button" class="btn-close" aria-label="close-modal" data-modal="close-modal">Close</button>
@@ -956,12 +964,12 @@
                          </div>
                      </div>
 
-                     <div class="col-lg-4 col-md-6 col-sm-12 text-center element-item mix latest">
+                     <div class="col-lg-4 col-md-6 col-sm-12 text-center element-item mix wordpress">
                          <div class="our-project">
                              <div class="img">
-                                 <a class="test-popup-link" href="./assets/img/project/online-exam.png">
+                                 <a class="test-popup-link">
                                      <div class="img-box d-inline-block position-relative">
-                                         <img src="./assets/img/project/online-exam.png" alt="Ashion" class="img-fluid">
+                                         <img  href="./assets/img/project/online-exam.png" src="./assets/img/project/online-exam.png" alt="Ashion" class="img-fluid">
                                          <ul class="project_hover d-flex justify-content-center align-items-center">
                                              <li><a href="#" aria-label="open-modal" data-modal="open-modal" class="btn d-flex justify-content-center align-items-center mx-3 link"><i class="fas fa-info"></i></a></li>
                                              <li><a target="blank" href="http://vison.rf.gd/" class="d-flex justify-content-center align-items-center mx-3 link"><i class="fas fa-external-link-alt"></i></a></li>
@@ -973,21 +981,24 @@
                                  <div class="modal-content">
                                      <div class="modal-header">
                                          <button role="button" class="icon-close" aria-label="close-modal" data-modal="close-modal"><i class="fas fa-cut"></i></button>
-                                         <h2 class="modal-title">Online Exam</h2>
+                                         <div class="modal_title d-flex justify-content-start flex-column align-items-start">
+                                             <h2 class="modal-title">Online Exam</h2>
+                                             <span>9 July, 2020</span>
+                                         </div>
                                      </div>
                                      <div class="modal-body">
-                                         <p> I have built this website for MCQ Exam system. This theme is able to handle school or college MCQ Exam. 
-                                              I have developed a plugin for this theme for admin to handle creating, managing exam paper and also for managing teacher's. 
+                                         <p> I have built this website for MCQ Exam system. This theme is able to handle school or college MCQ Exam.
+                                             I have developed a plugin for this theme for admin to handle creating, managing exam paper and also for managing teacher's.
                                              <a target="blank" href="http://vison.rf.gd/">Visit Site</a></p>
-                                             <div class="project_tag">
-                                                 <span>HTML</span>
-                                                 <span>CSS</span>
-                                                 <span>JavaScript</span>
-                                                 <span>Gmail API</span>
-                                                 <span>OOP PHP</span>
-                                                 <span>Custom Theme</span>
-                                                 <span>Custom Plugin</span>
-                                             </div>
+                                         <div class="project_tag">
+                                             <span>HTML</span>
+                                             <span>SASS</span>
+                                             <span>JavaScript</span>
+                                             <span>Gmail API</span>
+                                             <span>OOP PHP</span>
+                                             <span>Custom Theme</span>
+                                             <span>Custom Plugin</span>
+                                         </div>
                                      </div>
                                      <div class="modal-footer">
                                          <button role="button" class="btn-close" aria-label="close-modal" data-modal="close-modal">Close</button>
@@ -999,7 +1010,411 @@
                              </div>
                          </div>
                      </div>
-                     
+
+                     <div class="col-lg-4 col-md-6 col-sm-12 text-center element-item mix e-commerce wordpress">
+                         <div class="our-project">
+                             <div class="img">
+                                 <a class="test-popup-link">
+                                     <div class="img-box d-inline-block position-relative">
+                                         <img href="./assets/img/project/favily.png" src="./assets/img/project/favily.png" alt="Favily" class="img-fluid">
+                                         <ul class="project_hover d-flex justify-content-center align-items-center">
+                                             <li><a href="#" aria-label="open-modal" data-modal="open-modal" class="btn d-flex justify-content-center align-items-center mx-3 link"><i class="fas fa-info"></i></a></li>
+                                             <li><a target="blank" href="http://ecommerce-dev.epizy.com/" class="d-flex justify-content-center align-items-center mx-3 link"><i class="fas fa-external-link-alt"></i></a></li>
+                                         </ul>
+                                     </div>
+                                 </a>
+                             </div>
+                             <div class="modal" role="dialog" aria-hidden="true" data-modal>
+                                 <div class="modal-content">
+                                     <div class="modal-header">
+                                         <button role="button" class="icon-close" aria-label="close-modal" data-modal="close-modal"><i class="fas fa-cut"></i></button>
+                                         <div class="modal_title d-flex justify-content-start flex-column align-items-start">
+                                             <h2 class="modal-title">Favily</h2>
+                                             <span>02 Oct, 2020</span>
+                                         </div>
+                                     </div>
+                                     <div class="modal-body">
+                                         <p>This website built with Wordpress astra free template.
+                                             I have customized that theme And made some changes to make it look beautiful.
+                                             <a target="blank" href="http://ecommerce-dev.epizy.com/">Visit Site</a></p>
+                                         <div class="project_tag">
+                                             <span>CSS</span>
+                                             <span>WordPress</span>
+                                             <span>Theme Customization</span>
+                                             <span>Elementor</span>
+                                             <span>PHP</span>
+                                         </div>
+                                     </div>
+                                     <div class="modal-footer">
+                                         <button role="button" class="btn-close" aria-label="close-modal" data-modal="close-modal">Close</button>
+                                     </div>
+                                 </div>
+                             </div>
+                             <div class="title py-4">
+                                 <h4 class="text-uppercase">Favily</h4>
+                             </div>
+                         </div>
+                     </div>
+
+                     <div class="col-lg-4 col-md-6 col-sm-12 text-center element-item mix test">
+                         <div class="our-project">
+                             <div class="img">
+                                 <a class="test-popup-link">
+                                     <div class="img-box d-inline-block position-relative">
+                                         <img href="./assets/img/project/single-portfolio.png" src="./assets/img/project/single-portfolio.png" alt="Personality Portfolio" class="img-fluid">
+                                         <ul class="project_hover d-flex justify-content-center align-items-center">
+                                             <li><a href="#" aria-label="open-modal" data-modal="open-modal" class="btn d-flex justify-content-center align-items-center mx-3 link"><i class="fas fa-info"></i></a></li>
+                                             <li><a target="blank" href="https://arif32-dev.github.io/personality_project/app.html" class="d-flex justify-content-center align-items-center mx-3 link"><i class="fas fa-external-link-alt"></i></a></li>
+                                         </ul>
+                                     </div>
+                                 </a>
+                             </div>
+                             <div class="modal" role="dialog" aria-hidden="true" data-modal>
+                                 <div class="modal-content">
+                                     <div class="modal-header">
+                                         <button role="button" class="icon-close" aria-label="close-modal" data-modal="close-modal"><i class="fas fa-cut"></i></button>
+                                         <div class="modal_title d-flex justify-content-start flex-column align-items-start">
+                                             <h2 class="modal-title">Personality Portfolio</h2>
+                                             <span>13 Nov, 2019</span>
+                                         </div>
+                                     </div>
+                                     <div class="modal-body">
+                                         <p>This website is built with pure HTML5, CSS3 and JavaScript. For animation I have used
+                                             GSAP. The whole website made from figma wireframe.
+                                             <a target="blank" href="https://arif32-dev.github.io/personality_project/app.html">Visit Site</a></p>
+                                         <div class="project_tag">
+                                             <span>Figma</span>
+                                             <span>HTML</span>
+                                             <span>CSS</span>
+                                             <span>JavaScript</span>
+                                             <span>GSAP</span>
+                                         </div>
+                                     </div>
+                                     <div class="modal-footer">
+                                         <button role="button" class="btn-close" aria-label="close-modal" data-modal="close-modal">Close</button>
+                                     </div>
+                                 </div>
+                             </div>
+                             <div class="title py-4">
+                                 <h4 class="text-uppercase mb-3">Personality</h4>
+                                 <h4 class="text-uppercase">Portfolio</h4>
+                             </div>
+                         </div>
+                     </div>
+
+                     <div class="col-lg-4 col-md-6 col-sm-12 text-center element-item mix e-commerce wordpress">
+                         <div class="our-project">
+                             <div class="img">
+                                 <a class="test-popup-link">
+                                     <div class="img-box d-inline-block position-relative">
+                                         <img href="./assets/img/project/nursery.png" src="./assets/img/project/nursery.png" alt="Nursery" class="img-fluid">
+                                         <ul class="project_hover d-flex justify-content-center align-items-center">
+                                             <li><a href="#" aria-label="open-modal" data-modal="open-modal" class="btn d-flex justify-content-center align-items-center mx-3 link"><i class="fas fa-info"></i></a></li>
+                                             <li><a target="blank" href="http://online-shop.infinityfreeapp.com/" class="d-flex justify-content-center align-items-center mx-3 link"><i class="fas fa-external-link-alt"></i></a></li>
+                                         </ul>
+                                     </div>
+                                 </a>
+                             </div>
+                             <div class="modal" role="dialog" aria-hidden="true" data-modal>
+                                 <div class="modal-content">
+                                     <div class="modal-header">
+                                         <button role="button" class="icon-close" aria-label="close-modal" data-modal="close-modal"><i class="fas fa-cut"></i></button>
+                                         <div class="modal_title d-flex justify-content-start flex-column align-items-start">
+                                             <h2 class="modal-title">Nursery</h2>
+                                             <span>04 Oct, 2020</span>
+                                         </div>
+                                     </div>
+                                     <div class="modal-body">
+                                         <p>This website built with Wordpress free theme.
+                                             I have customized that theme & made some changes to make it look beautiful.
+                                             <a target="blank" href="http://online-shop.infinityfreeapp.com/">Visit Site</a></p>
+                                         <div class="project_tag">
+                                             <span>CSS</span>
+                                             <span>WordPress</span>
+                                             <span>Theme Customization</span>
+                                             <span>Elementor</span>
+                                             <span>PHP</span>
+                                         </div>
+                                     </div>
+                                     <div class="modal-footer">
+                                         <button role="button" class="btn-close" aria-label="close-modal" data-modal="close-modal">Close</button>
+                                     </div>
+                                 </div>
+                             </div>
+                             <div class="title py-4">
+                                 <h4 class="text-uppercase">Nursery</h4>
+                             </div>
+                         </div>
+                     </div>
+
+                     <div class="col-lg-4 col-md-6 col-sm-12 text-center element-item mix wordpress">
+                         <div class="our-project">
+                             <div class="img">
+                                 <a class="test-popup-link">
+                                     <div class="img-box d-inline-block position-relative">
+                                         <img href="./assets/img/project/fictional-university.png" src="./assets/img/project/fictional-university.png" alt="Fictional University" class="img-fluid">
+                                         <ul class="project_hover d-flex justify-content-center align-items-center">
+                                             <li><a href="#" aria-label="open-modal" data-modal="open-modal" class="btn d-flex justify-content-center align-items-center mx-3 link"><i class="fas fa-info"></i></a></li>
+                                             <li><a target="blank" href="http://uni.craigeastwood.com/" class="d-flex justify-content-center align-items-center mx-3 link"><i class="fas fa-external-link-alt"></i></a></li>
+                                         </ul>
+                                     </div>
+                                 </a>
+                             </div>
+                             <div class="modal" role="dialog" aria-hidden="true" data-modal>
+                                 <div class="modal-content">
+                                     <div class="modal-header">
+                                         <button role="button" class="icon-close" aria-label="close-modal" data-modal="close-modal"><i class="fas fa-cut"></i></button>
+                                         <div class="modal_title d-flex justify-content-start flex-column align-items-start">
+                                             <h2 class="modal-title">Fictional University</h2>
+                                             <span>01 May, 2020</span>
+                                         </div>
+                                     </div>
+                                     <div class="modal-body">
+                                         <p>This website is built with Wordpress custom theme, ACF plugin & member plugin.
+                                             The main purpose of this website is to handle academic information about a school or collage.
+                                             <a target="blank" href="http://uni.craigeastwood.com/">Visit Site</a></p>
+                                         <div class="project_tag">
+                                             <span>HTML</span>
+                                             <span>CSS</span>
+                                             <span>JavaScript</span>
+                                             <span>WordPress</span>
+                                             <span>Custom Theme</span>
+                                             <span>ACF Plugin</span>
+                                         </div>
+                                     </div>
+                                     <div class="modal-footer">
+                                         <button role="button" class="btn-close" aria-label="close-modal" data-modal="close-modal">Close</button>
+                                     </div>
+                                 </div>
+                             </div>
+                             <div class="title py-4">
+                                 <h4 class="text-uppercase mb-3">Fictional</h4>
+                                 <h4 class="text-uppercase">University</h4>
+                             </div>
+                         </div>
+                     </div>
+
+                     <div class="col-lg-4 col-md-6 col-sm-12 text-center element-item mix react">
+                         <div class="our-project">
+                             <div class="img">
+                                 <a class="test-popup-link">
+                                     <div class="img-box d-inline-block position-relative">
+                                         <img href="./assets/img/project/food-search.png" src="./assets/img/project/food-search.png" alt="Food API" class="img-fluid">
+                                         <ul class="project_hover d-flex justify-content-center align-items-center">
+                                             <li><a href="#" aria-label="open-modal" data-modal="open-modal" class="btn d-flex justify-content-center align-items-center mx-3 link"><i class="fas fa-info"></i></a></li>
+                                             <li><a target="blank" href="https://loving-neumann-723e40.netlify.app/" class="d-flex justify-content-center align-items-center mx-3 link"><i class="fas fa-external-link-alt"></i></a></li>
+                                         </ul>
+                                     </div>
+                                 </a>
+                             </div>
+                             <div class="modal" role="dialog" aria-hidden="true" data-modal>
+                                 <div class="modal-content">
+                                     <div class="modal-header">
+                                         <button role="button" class="icon-close" aria-label="close-modal" data-modal="close-modal"><i class="fas fa-cut"></i></button>
+                                         <div class="modal_title d-flex justify-content-start flex-column align-items-start">
+                                             <h2 class="modal-title">Food API</h2>
+                                             <span>03 Oct, 2019</span>
+                                         </div>
+                                     </div>
+                                     <div class="modal-body">
+                                         <p>This website is built with React. This SPA application is able to search you favourite
+                                             foods and along with their ingredients , recipies & calories.
+                                             <a target="blank" href="https://loving-neumann-723e40.netlify.app/">Visit Site</a></p>
+                                         <div class="project_tag">
+                                             <span>JSX</span>
+                                             <span>CSS</span>
+                                             <span>JavaScript</span>
+                                             <span>React.js</span>
+                                             <span>Food API</span>
+                                         </div>
+                                     </div>
+                                     <div class="modal-footer">
+                                         <button role="button" class="btn-close" aria-label="close-modal" data-modal="close-modal">Close</button>
+                                     </div>
+                                 </div>
+                             </div>
+                             <div class="title py-4">
+                                 <h4 class="text-uppercase">Food API</h4>
+                             </div>
+                         </div>
+                     </div>
+
+                     <div class="col-lg-4 col-md-6 col-sm-12 text-center element-item mix test">
+                         <div class="our-project">
+                             <div class="img">
+                                 <a class="test-popup-link">
+                                     <div class="img-box d-inline-block position-relative">
+                                         <img href="./assets/img/project/login-animation.png" src="./assets/img/project/login-animation.png" alt="Login Form" class="img-fluid">
+                                         <ul class="project_hover d-flex justify-content-center align-items-center">
+                                             <li><a href="#" aria-label="open-modal" data-modal="open-modal" class="btn d-flex justify-content-center align-items-center mx-3 link"><i class="fas fa-info"></i></a></li>
+                                             <li><a target="blank" href="https://arif32-dev.github.io/Login-form/app.html" class="d-flex justify-content-center align-items-center mx-3 link"><i class="fas fa-external-link-alt"></i></a></li>
+                                         </ul>
+                                     </div>
+                                 </a>
+                             </div>
+                             <div class="modal" role="dialog" aria-hidden="true" data-modal>
+                                 <div class="modal-content">
+                                     <div class="modal-header">
+                                         <button role="button" class="icon-close" aria-label="close-modal" data-modal="close-modal"><i class="fas fa-cut"></i></button>
+                                         <div class="modal_title d-flex justify-content-start flex-column align-items-start">
+                                             <h2 class="modal-title">Login Form</h2>
+                                             <span>22 Nov, 2019</span>
+                                         </div>
+                                     </div>
+                                     <div class="modal-body">
+                                         <p>This is just a simple login form with animation built for test purpose.
+                                             <a target="blank" href="https://arif32-dev.github.io/Login-form/app.html">Visit Site</a></p>
+                                         <div class="project_tag">
+                                             <span>HTML</span>
+                                             <span>CSS</span>
+                                             <span>JavaScript</span>
+                                             <span>GSAP</span>
+                                         </div>
+                                     </div>
+                                     <div class="modal-footer">
+                                         <button role="button" class="btn-close" aria-label="close-modal" data-modal="close-modal">Close</button>
+                                     </div>
+                                 </div>
+                             </div>
+                             <div class="title py-4">
+                                 <h4 class="text-uppercase">Login Form</h4>
+                             </div>
+                         </div>
+                     </div>
+
+                      <div class="col-lg-4 col-md-6 col-sm-12 text-center element-item mix react">
+                         <div class="our-project">
+                             <div class="img">
+                                 <a class="test-popup-link">
+                                     <div class="img-box d-inline-block position-relative">
+                                         <img href="./assets/img/project/react-resort.png" src="./assets/img/project/react-resort.png" alt="Beach Resort" class="img-fluid">
+                                         <ul class="project_hover d-flex justify-content-center align-items-center">
+                                             <li><a href="#" aria-label="open-modal" data-modal="open-modal" class="btn d-flex justify-content-center align-items-center mx-3 link"><i class="fas fa-info"></i></a></li>
+                                             <li><a target="blank" href="https://resturant-resort.netlify.app/" class="d-flex justify-content-center align-items-center mx-3 link"><i class="fas fa-external-link-alt"></i></a></li>
+                                         </ul>
+                                     </div>
+                                 </a>
+                             </div>
+                             <div class="modal" role="dialog" aria-hidden="true" data-modal>
+                                 <div class="modal-content">
+                                     <div class="modal-header">
+                                         <button role="button" class="icon-close" aria-label="close-modal" data-modal="close-modal"><i class="fas fa-cut"></i></button>
+                                         <div class="modal_title d-flex justify-content-start flex-column align-items-start">
+                                             <h2 class="modal-title">Beach Resort</h2>
+                                             <span>12 Oct, 2019</span>
+                                         </div>
+                                     </div>
+                                     <div class="modal-body">
+                                         <p>This website is built with React. This SPA application is made for a resort business. 
+                                             It can filter out rooms that are available to a resort based on different category. 
+                                             <a target="blank" href="https://resturant-resort.netlify.app/">Visit Site</a></p>
+                                         <div class="project_tag">
+                                            <span>JSX</span>
+                                             <span>CSS</span>
+                                             <span>JavaScript</span>
+                                             <span>React.js</span>
+                                             <span>Food API</span>
+                                         </div>
+                                     </div>
+                                     <div class="modal-footer">
+                                         <button role="button" class="btn-close" aria-label="close-modal" data-modal="close-modal">Close</button>
+                                     </div>
+                                 </div>
+                             </div>
+                             <div class="title py-4">
+                                 <h4 class="text-uppercase">Beach Resort</h4>
+                             </div>
+                         </div>
+                     </div>
+
+                       <div class="col-lg-4 col-md-6 col-sm-12 text-center element-item mix react">
+                         <div class="our-project">
+                             <div class="img">
+                                 <a class="test-popup-link">
+                                     <div class="img-box d-inline-block position-relative">
+                                         <img href="./assets/img/project/react-phone-shop.png" src="./assets/img/project/react-phone-shop.png" alt="Phone Shop" class="img-fluid">
+                                         <ul class="project_hover d-flex justify-content-center align-items-center">
+                                             <li><a href="#" aria-label="open-modal" data-modal="open-modal" class="btn d-flex justify-content-center align-items-center mx-3 link"><i class="fas fa-info"></i></a></li>
+                                             <li><a target="blank" href="https://mobile-phone-store-e-cm.netlify.app/" class="d-flex justify-content-center align-items-center mx-3 link"><i class="fas fa-external-link-alt"></i></a></li>
+                                         </ul>
+                                     </div>
+                                 </a>
+                             </div>
+                             <div class="modal" role="dialog" aria-hidden="true" data-modal>
+                                 <div class="modal-content">
+                                     <div class="modal-header">
+                                         <button role="button" class="icon-close" aria-label="close-modal" data-modal="close-modal"><i class="fas fa-cut"></i></button>
+                                         <div class="modal_title d-flex justify-content-start flex-column align-items-start">
+                                             <h2 class="modal-title">Phone Shop</h2>
+                                             <span>03 Oct, 2019</span>
+                                         </div>
+                                     </div>
+                                     <div class="modal-body">
+                                         <p>This website is built with React. This SPA application is a just a simple phone shop website. 
+                                             People can add phone to the cart, view phone details etc. BTW it was a test project. 
+                                             <a target="blank" href="https://mobile-phone-store-e-cm.netlify.app/">Visit Site</a></p>
+                                         <div class="project_tag">
+                                            <span>JSX</span>
+                                             <span>CSS</span>
+                                             <span>JavaScript</span>
+                                             <span>React.js</span>
+                                             <span>Food API</span>
+                                         </div>
+                                     </div>
+                                     <div class="modal-footer">
+                                         <button role="button" class="btn-close" aria-label="close-modal" data-modal="close-modal">Close</button>
+                                     </div>
+                                 </div>
+                             </div>
+                             <div class="title py-4">
+                                 <h4 class="text-uppercase">Phone Shop</h4>
+                             </div>
+                         </div>
+                     </div>
+
+                      <div class="col-lg-4 col-md-6 col-sm-12 text-center element-item mix test ">
+                         <div class="our-project">
+                             <div class="img">
+                                 <a class="test-popup-link">
+                                     <div class="img-box d-inline-block position-relative">
+                                         <img href="./assets/img/project/sliding-animation.png" src="./assets/img/project/sliding-animation.png" alt="Sliding Animation" class="img-fluid">
+                                         <ul class="project_hover d-flex justify-content-center align-items-center">
+                                             <li><a href="#" aria-label="open-modal" data-modal="open-modal" class="btn d-flex justify-content-center align-items-center mx-3 link"><i class="fas fa-info"></i></a></li>
+                                             <li><a target="blank" href="https://arif32-dev.github.io/Sliding_animation/Sliding_animation/" class="d-flex justify-content-center align-items-center mx-3 link"><i class="fas fa-external-link-alt"></i></a></li>
+                                         </ul>
+                                     </div>
+                                 </a>
+                             </div>
+                             <div class="modal" role="dialog" aria-hidden="true" data-modal>
+                                 <div class="modal-content">
+                                     <div class="modal-header">
+                                         <button role="button" class="icon-close" aria-label="close-modal" data-modal="close-modal"><i class="fas fa-cut"></i></button>
+                                         <div class="modal_title d-flex justify-content-start flex-column align-items-start">
+                                             <h2 class="modal-title">Sliding Animation</h2>
+                                             <span>14 Nov, 2019</span>
+                                         </div>
+                                     </div>
+                                     <div class="modal-body">
+                                         <p>This is just a simple sliding test project with animation built for test purpose.
+                                             <a target="blank" href="https://arif32-dev.github.io/Sliding_animation/Sliding_animation/">Visit Site</a></p>
+                                         <div class="project_tag">
+                                             <span>HTML</span>
+                                             <span>CSS</span>
+                                             <span>JavaScript</span>
+                                             <span>GSAP</span>
+                                         </div>
+                                     </div>
+                                     <div class="modal-footer">
+                                         <button role="button" class="btn-close" aria-label="close-modal" data-modal="close-modal">Close</button>
+                                     </div>
+                                 </div>
+                             </div>
+                             <div class="title py-4">
+                                 <h4 class="text-uppercase">Sliding Animation</h4>
+                             </div>
+                         </div>
+                     </div>
+
                  </div>
              </div>
          </section>
@@ -1163,8 +1578,7 @@
      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
      <script src="./assets/package/responsive-tabs/dist/js/responsive-tabs.js"></script>
 
-     <!--  custom js file  -->
-     <script src="./assets/js/main.js"></script>
+
 
      <!-- GSAP -->
      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
@@ -1178,6 +1592,9 @@
 
      <!-- model js file -->
      <script src="./assets/package/model/modelo.js"></script>
+
+    <!--  custom js file  -->
+     <script src="./assets/js/main.js"></script>
 
      <!-- writing inline javascript -->
      <script>
@@ -1195,7 +1612,7 @@
                  centreImage: './assets/img/logo.png',
              });
          });
-     </script> -->
+     </script> 
 
  </body>
 

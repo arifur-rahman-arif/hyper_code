@@ -11,12 +11,9 @@ $(document).ready(function () {
         var containerEl = document.querySelector('.project-area .grid');
         mixitup(containerEl)
     })
-
-
-
     $('.project-area .button-group #btn1').trigger('click');
 
-    $('.project-area .grid .test-popup-link').magnificPopup({
+    $('.project-area .grid .img img').magnificPopup({
         type: 'image',
         gallery: { enabled: true }
     });
@@ -184,7 +181,7 @@ $(document).ready(function () {
     /* end of form submit */
 
     /* scroll to pages */
-    $('.header_area .navbar-nav a, aside > ul > li > a').click(function (e) {
+    $('.header_area .navbar-nav a, aside > ul > li > a, .services-area .sroll_to_contact').click(function (e) {
         e.preventDefault();
         let sec_id = $(e.currentTarget).attr('href');
         var sec = document.getElementById(sec_id);
