@@ -218,10 +218,6 @@ aside ul a {
 
 /* Banner Area */
 
-.site-main .banner-bg {
-    background: url(../img/banner/home-banner.png) no-repeat 0% 50%;
-}
-
 .site-main .site-banner .site-title h3 {
     padding-top: 35%;
     font-weight: 500;
@@ -241,6 +237,22 @@ aside ul a {
     font-size: 5rem;
 }
 
+.site-main .site-banner .site-title svg {
+    margin-left: -20px;
+}
+
+
+.site-main .site-banner .site-title .role_title {
+    height: 72px;
+}
+
+.site-main .site-banner .site-title svg {
+    stroke-width: 1px;
+    stroke-dasharray: 270px;
+    stroke-dashoffset: 270px;
+
+}
+
 .site-main .site-banner .site-title h4 {
     font-size: 1.5rem;
     white-space: nowrap;
@@ -253,7 +265,7 @@ aside ul a {
 
 @media screen and (max-width: 450px) {
     .site-main .site-banner .site-title h4 {
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 }
 
@@ -799,17 +811,27 @@ aside ul a {
 }
 
 .project-area .our-project .img-box {
+    cursor: zoom-in;
     overflow: hidden;
-    transition: box-shadow 0.5s ease-in-out;
-    -webkit-transition: box-shadow 0.5s ease-in-out;
-    -moz-transition: box-shadow 0.5s ease-in-out;
-    -ms-transition: box-shadow 0.5s ease-in-out;
-    -o-transition: box-shadow 0.5s ease-in-out;
+    transition: box-shadow, transform 0.5s ease-in-out;
+    -webkit-transition: box-shadow, transform 0.5s ease-in-out;
+    -moz-transition: box-shadow, transform 0.5s ease-in-out;
+    -ms-transition: box-shadow, transform 0.5s ease-in-out;
+    -o-transition: box-shadow, transform 0.5s ease-in-out;
 }
 
 .project-area .our-project .img-box:hover {
     box-shadow: var(--box-shadow);
+    transform: scale(1.09);
+    -webkit-transform: scale(1.09);
+    -moz-transform: scale(1.09);
+    -ms-transform: scale(1.09);
+    -o-transform: scale(1.09);
 }
+
+/* .project-area .our-project .img-box:hover>img {
+    
+} */
 
 
 .our-project .img-box ul {
@@ -836,15 +858,19 @@ aside ul a {
     color: whitesmoke;
     background: var(--gradient-color);
     text-align: center;
-    border-radius: 4px;
+    border-radius: 50%;
     font-size: 15px;
-    width: 45px;
+    width: 35px;
     height: 35px;
     transition: all 0.4s ease-in-out;
     -webkit-transition: all 0.4s ease-in-out;
     -moz-transition: all 0.4s ease-in-out;
     -ms-transition: all 0.4s ease-in-out;
     -o-transition: all 0.4s ease-in-out;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
 
 .our-project .img-box ul li .link:hover {

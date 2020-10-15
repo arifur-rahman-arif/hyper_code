@@ -4,6 +4,7 @@ $(document).ready(function() {
     $('.header_area .navbar-nav > li:not(.dark_mode_toggler)').on('click', function(e) {
         $('.header_area .navbar-nav > li:not(.dark_mode_toggler)').removeClass('active');
         $(e.currentTarget).addClass('active');
+        console.log($(e.currentTarget).href());
     })
 
     /* project area buttons active link functionality */
@@ -98,7 +99,6 @@ $(document).ready(function() {
 
     function dark_mode() {
 
-        $('.site-main .site-banner').removeClass('banner-bg');
         $('.about-title p').css('color', 'whitesmoke');
         $('.about-area .text-anim_container > span').css('color', 'whitesmoke');
 
@@ -119,7 +119,8 @@ $(document).ready(function() {
     }
 
     function normal_mode() {
-        $('.site-main .site-banner').addClass('banner-bg');
+        $('.tab-content .skill-boxes > .skill_info').css('background', 'white')
+
         $('.about-title p').css('color', '#777777');
         $('.about-area .text-anim_container > span').css('color', '#777777');
 
@@ -205,18 +206,4 @@ $(document).ready(function() {
     $('#myCanvasContainer ul li a, .project-area .our-project .project_hover .btn').click(function(e) {
         e.preventDefault();
     })
-
-    /* Typing animation */
-    var typed = new Typed(".about-area .text-anim", {
-        strings: [``, `I have variety of skills that I can implement it on my work with accuracy. Therefore I
-                                 work hard not only to deliver
-                                 high performance to my clients but also I starve to learn new tech so that I can ensure
-                                 a diverse contribution to my
-                                 work and also in web dev sector.
-                                 Also my dream is to develop a tech company/organization that will contribute in computer
-                                 technology in future.`],
-        typeSpeed: 17,
-        cursorChar: '<i class="fas fa-i-cursor"></i>',
-    });
-
 });
