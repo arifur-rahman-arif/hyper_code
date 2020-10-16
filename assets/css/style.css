@@ -821,6 +821,7 @@ aside ul a {
 }
 
 .project-area .our-project .img-box:hover {
+    z-index: 5;
     box-shadow: var(--box-shadow);
     transform: scale(1.09);
     -webkit-transform: scale(1.09);

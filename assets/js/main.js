@@ -1,11 +1,30 @@
 $(document).ready(function() {
-
+    /* remove Loader from document */
+    $('.loader_container').hide();
     /* main navigation menu active functionality */
     $('.header_area .navbar-nav > li:not(.dark_mode_toggler)').on('click', function(e) {
         $('.header_area .navbar-nav > li:not(.dark_mode_toggler)').removeClass('active');
         $(e.currentTarget).addClass('active');
-        console.log($(e.currentTarget).href());
+        let href_value = $(e.currentTarget).find('a').attr('href');
+        add_active_class_to_sidebar(href_value)
     })
+
+    function add_active_class_to_sidebar(href_value) {
+        $('aside > ul > li').removeClass('active_side_nav');
+        $("aside li > [href=" + href_value + "]").parent().addClass('active_side_nav');
+    }
+
+    $('aside > ul > li').on('click', (e) => {
+        let href_value = $(e.currentTarget).find('a').attr('href');
+        add_active_class_to_header(href_value);
+    })
+
+    function add_active_class_to_header(href_value) {
+        $('.header_area .navbar-nav > li:not(.dark_mode_toggler)').removeClass('active');
+        $(".header_area .navbar-nav > li:not(.dark_mode_toggler) > [href=" + href_value + "]").parent().addClass('active');
+    }
+    /* ============================== */
+
 
     /* project area buttons active link functionality */
     let $btns = $('.project-area .button-group button');
@@ -192,6 +211,7 @@ $(document).ready(function() {
         })
     })
     /* end of form submit */
+
 
     /* scroll to pages */
     $('.header_area .navbar-nav a, aside > ul > li > a, .services-area .sroll_to_contact').click(function(e) {
