@@ -678,9 +678,56 @@ aside ul a {
 
 /* End of skill section area */
 
+/* Location Area */
+.about-area .location-area .mobile_view {
+    display: none;
+}
 
+.about-area .location-area>h1 {
+    font-family: var(--roboto);
+}
 
+.about-area .location-area .location_info>div {
+    font: normal 400 19px/ 20px var(--roboto);
+}
 
+@media screen and (max-width: 915px) {
+    .about-area .location-area .location_info>div {
+        margin-top: 30px !important;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    .about-area .location-area .location_info {
+        align-items: center !important;
+    }
+
+    .about-area .location-area .desktop_view {
+        display: none;
+    }
+
+    .about-area .location-area .mobile_view {
+        display: block;
+    }
+
+    .about-area .location-area .mobile_view>img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .about-area .location-area>h1 {
+        font-size: 35px;
+    }
+
+    .about-area .location-area .location_info {
+        align-items: start !important;
+        margin-left: 15px;
+    }
+}
+
+/* End Location area */
 
 /* End About Area */
 
