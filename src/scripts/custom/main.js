@@ -1,7 +1,5 @@
 $(document).ready(function() {
-    /* remove Loader from document */
-    $('.loader_container').hide();
-    $('.display_none').removeClass('display_none')
+   
     /* main navigation menu active functionality */
     $('.header_area .navbar-nav > li:not(.dark_mode_toggler)').on('click', function(e) {
         $('.header_area .navbar-nav > li:not(.dark_mode_toggler)').removeClass('active');

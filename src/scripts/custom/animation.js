@@ -13,14 +13,23 @@ function Typing_anim() {
         cursorChar: '<i class="fas fa-i-cursor"></i>',
     });
 }
-ScrollTrigger.create({
-    trigger: ".text-anim_container",
-    start: "top 65%",
-    once: true,
-    onEnter: () => {
-        Typing_anim();
-    },
-});
+
+var display_none_elem = document.querySelectorAll('.display_none');
+$(document).ready(function() {
+    /* remove Loader from document */
+    $('.loader_container').hide();
+    $('.display_none').removeClass('display_none');
+    ScrollTrigger.create({
+        trigger: ".text-anim_container",
+        start: "top 65%",
+        once: true,
+        markers: false,
+        onEnter: () => {
+            Typing_anim();
+        },
+    });
+})
+
 
 var svg = document.querySelector('.site-main .site-banner .site-title svg path');
 var role_title = document.querySelector('.site-main .site-banner .site-title .role_title');
