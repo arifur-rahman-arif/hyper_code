@@ -17,7 +17,7 @@
                  <div class="col-lg-4 col-md-6 col-sm-12">
                      <div class="services">
                          <div class="sevices-img text-center py-4">
-                             <img src="./assets/img/services/web-design.jpg" width="135" height="110" alt="Services-1">
+                             <img src="./build/img/services/web-design.jpg" width="135" height="110" alt="Services-1">
                          </div>
                          <div class="card-body text-center">
                              <h5 class="card-title text-uppercase font-roboto">Front-End</h5>
@@ -30,7 +30,7 @@
                  <div class="col-lg-4 col-md-6 col-sm-12">
                      <div class="services">
                          <div class="sevices-img text-center py-4">
-                             <img src="./assets/img/services/web-dev.png" width="135" height="110" alt="Services-2">
+                             <img src="./build/img/services/web-dev.png" width="135" height="110" alt="Services-2">
                          </div>
                          <div class="card-body text-center">
                              <h5 class="card-title text-uppercase font-roboto">Back-End</h5>
@@ -45,7 +45,7 @@
                  <div class="col-lg-4 col-md-6 col-sm-12">
                      <div class="services">
                          <div class="sevices-img text-center py-4">
-                             <img src="./assets/img/services/wordpress.png" width="135" height="110" alt="Services-3">
+                             <img src="./build/img/services/wordpress.png" width="135" height="110" alt="Services-3">
                          </div>
                          <div class="card-body text-center">
                              <h5 class="card-title text-uppercase font-roboto">WordPress Development</h5>
@@ -60,7 +60,7 @@
                  <div class="col-lg-4 col-md-6 col-sm-12">
                      <div class="services">
                          <div class="sevices-img text-center py-4">
-                             <img src="./assets/img/services/s4.png" alt="Services-4">
+                             <img src="./build/img/services/s4.png" alt="Services-4">
                          </div>
                          <div class="card-body text-center">
                              <h5 class="card-title text-uppercase font-roboto">Web optimization</h5>
@@ -75,7 +75,7 @@
                  <div class="col-lg-4 col-md-6 col-sm-12">
                      <div class="services">
                          <div class="sevices-img text-center py-4">
-                             <img src="./assets/img/services/mangement.png" width="135" height="110" alt="Services-4">
+                             <img src="./build/img/services/mangement.png" width="135" height="110" alt="Services-4">
                          </div>
                          <div class="card-body text-center">
                              <h5 class="card-title text-uppercase font-roboto">Web Management</h5>

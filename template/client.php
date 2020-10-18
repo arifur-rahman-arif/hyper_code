@@ -17,7 +17,7 @@
         <div class="owl-carousel owl-theme">
             <div class="client row">
                 <div class="col-lg-4 col-md-12 client-img">
-                    <img src="./assets/img/testimonials/t1.jpg" alt="img1" class="img-fluid">
+                    <img src="./build/img/testimonials/t1.jpg" alt="img1" class="img-fluid">
                 </div>
                 <div class="col-lg-8 col-md-12 about-client">
                     <h4 class="text-uppercase">John Martin</h4>
@@ -27,7 +27,7 @@
             </div>
             <div class="client row">
                 <div class="col-lg-4 col-md-12 client-img">
-                    <img src="./assets/img/testimonials/t2.jpg" alt="img2" class="img-fluid">
+                    <img src="./build/img/testimonials/t2.jpg" alt="img2" class="img-fluid">
                 </div>
                 <div class="col-lg-8 col-md-12 about-client">
                     <h4 class="text-uppercase">Mac Hill</h4>
@@ -37,7 +37,7 @@
             </div>
             <div class="client row">
                 <div class="col-lg-4 col-md-12 client-img">
-                    <img src="./assets/img/testimonials/t1.jpg" alt="img1" class="img-fluid">
+                    <img src="./build/img/testimonials/t1.jpg" alt="img1" class="img-fluid">
                 </div>
                 <div class="col-lg-8 col-md-12 about-client">
                     <h4 class="text-uppercase">John Martin</h4>
@@ -47,7 +47,7 @@
             </div>
             <div class="client row">
                 <div class="col-lg-4 col-md-12 client-img">
-                    <img src="./assets/img/testimonials/t2.jpg" alt="img2" class="img-fluid">
+                    <img src="./build/img/testimonials/t2.jpg" alt="img2" class="img-fluid">
                 </div>
                 <div class="col-lg-8 col-md-12 about-client">
                     <h4 class="text-uppercase">Mac Hill</h4>
@@ -57,7 +57,7 @@
             </div>
             <div class="client row">
                 <div class="col-lg-4 col-md-12 client-img">
-                    <img src="./assets/img/testimonials/t1.jpg" alt="img1" class="img-fluid">
+                    <img src="./build/img/testimonials/t1.jpg" alt="img1" class="img-fluid">
                 </div>
                 <div class="col-lg-8 col-md-12 about-client">
                     <h4 class="text-uppercase">John Martin</h4>
@@ -67,7 +67,7 @@
             </div>
             <div class="client row">
                 <div class="col-lg-4 col-md-12 client-img">
-                    <img src="./assets/img/testimonials/t2.jpg" alt="img2" class="img-fluid">
+                    <img src="./build/img/testimonials/t2.jpg" alt="img2" class="img-fluid">
                 </div>
                 <div class="col-lg-8 col-md-12 about-client">
                     <h4 class="text-uppercase">Mac Hill</h4>

@@ -1,5 +1,5 @@
 <div class="container mt-2 mb-5 location-area">
-    <h1 class="text-uppercase text-center mb-5">Location</h1>
+    <h1 class="text-uppercase text-center mb-5 mt-2">Location</h1>
     <div class="row">
         <div class="col-md-7 col-12">
            <iframe 
@@ -14,10 +14,10 @@
         <div class="col-md-5 col-12">
             <div class="row">
                 <div class="col-md-3 desktop_view">
-                    <img src="./assets/img/location_v.svg" alt="" height="400">
+                    <img src="./build/img/location_v.svg" alt="" height="400">
                 </div>
                 <div class="col-md-3 mobile_view">
-                    <img src="./assets/img/location_h.svg" alt="" height="60">
+                    <img src="./build/img/location_h.svg" alt="" height="60">
                 </div>
                 <div class="col-md-9 position-relative d-flex flex-column justify-content-around align-items-sm-start location_info">
                     <div class="road mt-md-2">
@@ -27,7 +27,7 @@
                         Kishoreganj Sadar, 2300
                     </div>
                     <div class="country mt-md-2">
-                        Dhaka,<span> Bangladesh <img src="./assets/img/bangladesh.png" alt="Bangladesh" width="50" height="50"></span>
+                        Dhaka,<span> Bangladesh <img src="./build/img/bangladesh.png" alt="Bangladesh" width="50" height="50"></span>
                     </div>
                 </div>
             </div>

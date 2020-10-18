@@ -28,12 +28,12 @@
                     <div class="d-flex flex-row flex-wrap">
                         <a href="https://www.freelancer.com/u/DevDrArif" target="blank" type="button" class="btn button primary-button mr-4 text-uppercase">hire
                             me</a>
-                        <a href="./assets/ar-arif-resume.pdf" download type="button" class="btn button secondary-button text-uppercase">Get cv</a>
+                        <a href="./build/ar-arif-resume.pdf" download type="button" class="btn button secondary-button text-uppercase">Get cv</a>
                     </div>
                 </div>
             </div>
             <div class="col-lg-6 col-md-12 banner-image">
-                <img src="./assets/img/banner/banner-image.png" alt="banner-img" class="img-fluid">
+                <img src="./build/img/banner/banner-image.png" alt="banner-img" class="img-fluid">
             </div>
         </div>
     </div>

@@ -1,4 +1,4 @@
-<footer class="footer-area footer-bg" id="contact">
+<footer class="footer-area footer-bg display_none" id="contact">
     <div class="container">
         <div class="row">
             <div class="col-md-6 col-12 pl-5">
@@ -33,7 +33,7 @@
             </div>
             <div class="col-md-6 col-12">
                 <div class="site-logo text-center">
-                    <a href="#"><img src="./assets/img/logo.png" alt="logo"></a>
+                    <a href="#"><img src="./build/img/logo.png" alt="logo"></a>
                 </div>
                 <div class="social text-center">
                     <h5 class="text-uppercase">Contact me on</h5>

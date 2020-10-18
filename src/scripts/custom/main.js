@@ -86,7 +86,6 @@ $(document).ready(function() {
     $('.nav-item  #checkbox').click(function(e) {
         if ($('.nav-item > .switch > #checkbox').prop('checked') == true) {
             sendDark_mode_session('dark_mode', $(e.currentTarget).val());
-            console.log($(e.currentTarget).val());
         } else {
             sendDark_mode_session('normal_mode', $(e.currentTarget).val());
         }

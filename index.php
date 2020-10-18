@@ -16,39 +16,21 @@
      <meta name="color-scheme" content="dark light">
      <title>Hyper Code</title>
 
-     <link rel="icon" type="image/png" href="./assets/img/logo.png" />
-     <!--  Bootstrap css file  -->
+     <link rel="icon" type="image/png" href="./build/img/logo.png" />
+     <!-- CDN Files -->
      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-
-     <!--  font awesome icons  -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
-
-     <!--  Magnific Popup css file  -->
-     <link rel="stylesheet" href="./assets/package/Magnific-Popup/dist/magnific-popup.css">
-
-
-     <!--  Owl-carousel css file  -->
-     <link rel="stylesheet" href="./assets/package/owl-carousel/css/owl.carousel.min.css">
-     <link rel="stylesheet" href="./assets/package/owl-carousel/css/owl.theme.default.min.css">
-
-
-     <!--  custom css file  -->
-     <link rel="stylesheet" href="./assets/css/style.css">
-     <link rel="stylesheet" href="./assets/css/partials/global.css">
-     <link rel="stylesheet" href="./assets/css/partials/variable.css">
-
-     <!--  Responsive css file  -->
-     <link rel="stylesheet" href="./assets/css/responsive.css">
      <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;1,600&display=swap" rel="stylesheet">
 
-     <!-- responsive tab css file -->
-     <link href="./assets/package/responsive-tabs/dist/css/responsive-tabs.css" rel="stylesheet">
+     <link rel="stylesheet" href="./build/styles/main.min.css"> 
 
-     <!-- model css file -->
-     <link rel="stylesheet" href="./assets/package/model/modelo.css">
  </head>
 
  <style>
+     .display_none {
+         display: none;
+     }
+
      .boxes {
          --size: 32px;
          --duration: 800ms;
@@ -209,7 +191,7 @@
      <!--  ======================= End Side Menu Area ============================== -->
 
      <!--  ======================= Start Main Area ================================ -->
-     <main class="site-main">
+     <main class="site-main display_none">
 
 
          <!--  ======================= Start Banner Area =======================  -->
@@ -243,69 +225,22 @@
      <?php require_once __DIR__ .'/template/footer.php' ?>
      <!--  ======================= End Footer Area ================================ -->
 
+     <!-- CDN Files -->
 
      <!--  Jquery js file  -->
      <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-
-
-     <!--  Bootstrap js file  -->
      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-     <!--  isotope js library  -->
-     <script src="./assets/package/isotope/mixitup.min.js"></script>
-
-     <!--  Magnific popup script file  -->
-     <script src="./assets/package/Magnific-Popup/dist/jquery.magnific-popup.min.js"></script>
-
-     <!--  Owl-carousel js file  -->
-     <script src="./assets/package/owl-carousel/js/owl.carousel.min.js"></script>
-
-     <!-- Responsive tabs -->
      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-     <script src="./assets/package/responsive-tabs/dist/js/responsive-tabs.js"></script>
-
-
-
-     <!-- GSAP -->
      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/EasePack.min.js"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
 
-     <!-- Tag canvas file -->
-     <script src="./assets/package/tag-canvas/tagcanvas.js" type="text/javascript"></script>
+     <script src="./build/package/Magnific-Popup/jquery.magnific-popup.min.js"></script>
+     <script src="./build/package/mixitup/mixitup.min.js"></script>
+     <script src="./build/package/typed/typed.min.js"></script>
 
-     <!-- model js file -->
-     <script src="./assets/package/model/modelo.js"></script>
-
-     <!-- Typed js file -->
-     <script src="./assets/package/typed/typed.min.js"></script>
-
-     <!-- aimation js file -->
-     <script src="./assets/js/float.js"></script>
-     <script src="./assets/js/animation.js"></script>
-
-     <!--  custom js file  -->
-     <script src="./assets/js/main.js"></script>
-
-
-     <!-- writing inline javascript -->
-     <script>
-         (function($) {
-             $('.nav-tabs').responsiveTabs();
-         })(jQuery);
-     </script>
-
-     <script type="text/javascript">
-         $(document).ready(function() {
-             $('#myCanvas').tagcanvas({
-                 animTiming: "Smooth",
-                 depth: 0.99,
-                 outlineColour: 'transparent',
-                 centreImage: './assets/img/logo.png',
-             });
-         });
-     </script>
-
+     <!-- compiled  -->
+     <script src="./build/scripts/all.min.js"></script>
  </body>
 
  </html>

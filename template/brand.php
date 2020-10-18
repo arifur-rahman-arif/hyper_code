@@ -31,7 +31,7 @@
             </div>
             <div class="col-md-6 pl-lg-5">
                 <div class="contact_img_box">
-                    <img src="./assets/img/call.jpg" alt="call" class="img-fluid">
+                    <img src="./build/img/call.jpg" alt="call" class="img-fluid">
                 </div>
             </div>
         </div>

@@ -29,21 +29,4 @@ const css_compiler = async () => {
 const watch = () => {
     gulp.watch('./src/styles/**/*.css', css_compiler)
 }
-exports.css = watch;
-
-
-/**
- * @function html_minifier
- */
-
-var src_html = './template/*.php';
-var dest_html = './build/minified-template/';
-
-const html_compiler = async () => {
-    gulp.src(src_html)
-        .pipe(htmlmin({
-            collapseWhitespace: true
-        }))
-        .pipe(gulp.dest(dest_html))
-}
-exports.minify_html = html_compiler;
+exports.default = watch;

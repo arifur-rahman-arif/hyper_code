@@ -3,7 +3,7 @@ function project_contents(){
     $contents = array(
         array(
             'mixer' => 'e-commerce wordpress',
-            'img_url' => './assets/img/project/ashion.png',
+            'img_url' => './build/img/project/ashion.png',
             'project_url' => 'http://online-shop2.infinityfreeapp.com/',
             'title' => 'Ashion Theme',
             'split_title' => false,
@@ -14,7 +14,7 @@ function project_contents(){
         ),
         array(
             'mixer' => 'wordpress',
-            'img_url' => './assets/img/project/bb-blogger.png',
+            'img_url' => './build/img/project/bb-blogger.png',
             'project_url' => 'http://nemo.epizy.com/',
             'title' => 'Brian Blogger',
             'split_title' => false,
@@ -25,7 +25,7 @@ function project_contents(){
         ),
         array(
             'mixer' => 'wordpress',
-            'img_url' => './assets/img/project/online-exam.png',
+            'img_url' => './build/img/project/online-exam.png',
             'project_url' => 'http://vison.rf.gd/',
             'title' => 'Online Exam',
             'split_title' => false,
@@ -36,7 +36,7 @@ function project_contents(){
         ),
         array(
             'mixer' => 'e-commerce wordpress',
-            'img_url' => './assets/img/project/favily.png',
+            'img_url' => './build/img/project/favily.png',
             'project_url' => 'http://ecommerce-dev.epizy.com/',
             'title' => 'Favily',
             'split_title' => false,
@@ -47,7 +47,7 @@ function project_contents(){
         ),
         array(
             'mixer' => 'test',
-            'img_url' => './assets/img/project/single-portfolio.png',
+            'img_url' => './build/img/project/single-portfolio.png',
             'project_url' => 'https://arif32-dev.github.io/personality_project/app.html',
             'title' => 'Personality Portfolio',
             'split_title' => true,
@@ -58,7 +58,7 @@ function project_contents(){
         ),
         array(
             'mixer' => 'e-commerce wordpress',
-            'img_url' => './assets/img/project/nursery.png',
+            'img_url' => './build/img/project/nursery.png',
             'project_url' => 'http://online-shop.infinityfreeapp.com/',
             'title' => 'Nursery',
             'split_title' => false,
@@ -69,7 +69,7 @@ function project_contents(){
         ),
         array(
             'mixer' => 'wordpress',
-            'img_url' => './assets/img/project/fictional-university.png',
+            'img_url' => './build/img/project/fictional-university.png',
             'project_url' => 'http://uni.craigeastwood.com/',
             'title' => 'Fictional University',
             'split_title' => true,
@@ -80,7 +80,7 @@ function project_contents(){
         ),
         array(
             'mixer' => 'react',
-            'img_url' => './assets/img/project/food-search.png',
+            'img_url' => './build/img/project/food-search.png',
             'project_url' => 'https://loving-neumann-723e40.netlify.app/',
             'title' => 'Food API',
             'split_title' => false,
@@ -91,7 +91,7 @@ function project_contents(){
         ),
         array(
             'mixer' => 'test',
-            'img_url' => './assets/img/project/login-animation.png',
+            'img_url' => './build/img/project/login-animation.png',
             'project_url' => 'https://arif32-dev.github.io/Login-form/app.html',
             'title' => 'Login Form',
             'split_title' => false,
@@ -101,7 +101,7 @@ function project_contents(){
         ),
         array(
             'mixer' => 'react',
-            'img_url' => './assets/img/project/react-resort.png',
+            'img_url' => './build/img/project/react-resort.png',
             'project_url' => 'https://resturant-resort.netlify.app/',
             'title' => 'Beach Resort',
             'split_title' => false,
@@ -112,7 +112,7 @@ function project_contents(){
         ),
         array(
             'mixer' => 'react',
-            'img_url' => './assets/img/project/react-phone-shop.png',
+            'img_url' => './build/img/project/react-phone-shop.png',
             'project_url' => 'https://mobile-phone-store-e-cm.netlify.app/',
             'title' => 'Phone Shop',
             'split_title' => false,
@@ -123,7 +123,7 @@ function project_contents(){
         ),
         array(
             'mixer' => 'test',
-            'img_url' => './assets/img/project/sliding-animation.png',
+            'img_url' => './build/img/project/sliding-animation.png',
             'project_url' => 'https://arif32-dev.github.io/Sliding_animation/Sliding_animation/',
             'title' => 'Sliding Animation',
             'split_title' => false,

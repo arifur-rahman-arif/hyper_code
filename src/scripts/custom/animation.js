@@ -55,9 +55,9 @@ function role_title_typing() {
     var typed = new Typed('.site-main .site-banner .site-title .role_title', {
         strings: [
             '',
-            'Developer <img class="ml-2" width="45" height="45" src="./assets/img/role/code.svg" />',
-            'Designer <img class="ml-2" width="45" height="45" src="./assets/img/role/designer.svg" />',
-            'Doer <img class="ml-2" width="40" height="40" src="./assets/img/role/doer.svg" />'
+            'Developer <img class="ml-2" width="45" height="45" src="./build/img/role/code.svg" />',
+            'Designer <img class="ml-2" width="45" height="45" src="./build/img/role/designer.svg" />',
+            'Doer <img class="ml-2" width="40" height="40" src="./build/img/role/doer.svg" />'
         ],
         typeSpeed: 60,
         showCursor: false,

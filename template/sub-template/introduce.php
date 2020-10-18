@@ -2,7 +2,7 @@
      <div class="row">
          <div class="col-lg-6 col-md-12">
              <div class="about-image">
-                 <img src="./assets/img/about-us.png" alt="About us" class="img-fluid">
+                 <img src="./build/img/about-us.png" alt="About us" class="img-fluid">
              </div>
          </div>
          <div class="col-lg-6 col-md-12 about-title">
@@ -20,7 +20,7 @@
                      </span>
                  </article>
              </div>
-             <a href="./assets/ar-arif-resume.pdf" download class="btn button primary-button text-uppercase">Download cv</a>
+             <a href="./build/ar-arif-resume.pdf" download class="btn button primary-button text-uppercase">Download cv</a>
          </div>
      </div>
  </div>
