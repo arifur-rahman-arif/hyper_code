@@ -1,0 +1,18 @@
+/* variables */
+@import './custom/partials/variable.css';
+/* globals */
+@import './custom/partials/global.css';
+/* main */
+@import './custom/style.css';
+/* responsive */
+@import './custom/responsive.css';
+
+/* package css */
+@import './package/magnific-popup.css';
+/* owl */
+@import './package/owl/owl.carousel.min.css';
+@import './package/owl/owl.theme.default.min.css';
+/* responive tabs css */
+@import './package/responsive-tabs.css';
+/* modal css */
+@import './package/modelo.css';

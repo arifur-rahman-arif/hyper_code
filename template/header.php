@@ -25,7 +25,7 @@
                          </li>
                          <li class="nav-item dark_mode_toggler d-flex justify-content-center align-items-center px-2 mx-1">
                              <label for="checkbox" class="switch">
-                                 <input data-url="<?php echo url() ?>" type="checkbox" <?php echo $_SESSION['dark_mode'] == 'on' ? 'checked' : '' ?> id="checkbox">
+                                 <input value="<?php echo url() ?>" type="checkbox" <?php echo $_SESSION['dark_mode'] == 'on' ? 'checked' : '' ?> id="checkbox">
                                  <span class="slider round"></span>
                              </label>
                          </li>
