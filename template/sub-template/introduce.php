@@ -20,7 +20,7 @@
                      </span>
                  </article>
              </div>
-             <a href="./build/ar-arif-resume.pdf" download class="btn button primary-button text-uppercase">Download cv</a>
+             <a href="./build/resume.pdf" download class="btn button primary-button text-uppercase">Download cv</a>
          </div>
      </div>
  </div>

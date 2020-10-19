@@ -28,7 +28,7 @@
                     <div class="d-flex flex-row flex-wrap">
                         <a href="https://www.freelancer.com/u/DevDrArif" target="blank" type="button" class="btn button primary-button mr-4 text-uppercase">hire
                             me</a>
-                        <a href="./build/ar-arif-resume.pdf" download type="button" class="btn button secondary-button text-uppercase">Get cv</a>
+                        <a href="./build/resume.pdf" download type="button" class="btn button secondary-button text-uppercase">Get cv</a>
                     </div>
                 </div>
             </div>
